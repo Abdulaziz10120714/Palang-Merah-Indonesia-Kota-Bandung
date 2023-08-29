@@ -2,12 +2,41 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* navbar */
 body .navbar {
-  font-weight: 500;
+  text-weight: 500;
 }
-body .slide-imgae {
-  height: 450px;
+.nav-item {
+  margin: auto 20px;
 }
-body .card-aktifitas {
-  padding: 0;
+
+/* navbar itemm */
+
+/* slide gambar */
+.gambarGerak {
+  box-sizing: content-box;
 }
+
+.carousel-item img {
+  width: 100% !important;
+  margin-top: 7vh !important;
+}
+
+.list-card {
+  float: left !important;
+}
+
+.aktifitas {
+  padding: 20px 40px;
+  margin-top: -150px;
+  z-index: 1000;
+  position: relative;
+}
+/* slide gambar end */
+
+/* isi */
+.profile {
+  margin-top: -190px;
+  z-index: 999;
+}
+/* isi end */
