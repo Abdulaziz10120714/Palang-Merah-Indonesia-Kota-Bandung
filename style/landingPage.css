@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body .navbar {
+  font-weight: 500;
+}
+body .slide-imgae {
+  height: 450px;
+}
+body .card-aktifitas {
+  padding: 0;
+}
