@@ -1,0 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body .navbar {
+    font-weight: 500;
+  }
+  body .slide-imgae {
+    height: 450px;
+  }
+  .card-aktivitas{
+    border-radius: 20px;
+    bottom: 20px !important;
+    height: 200px !important;
+    padding: 10px;
+  }
+  
