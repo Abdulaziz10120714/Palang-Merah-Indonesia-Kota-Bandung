@@ -59,3 +59,14 @@ h6 {
     display: none; /* Menghilangkan gambar */
   }
 }
+
+.coba {
+  margin: 1% 0;
+}
+
+@media (max-width: 767px) {
+  /* Media query untuk layar dengan lebar maksimal 767px */
+  .coba {
+    margin: 10% 0; /* Mengubah margin atas dan bawah saat layar kecil */
+  }
+}

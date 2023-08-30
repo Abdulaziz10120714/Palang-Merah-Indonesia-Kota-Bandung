@@ -47,13 +47,6 @@ h6 {
   }
 }
 
-.lingkaran1 {
-  width: 200px;
-  height: 200px;
-  background: #dac52c;
-  border-radius: 100%;
-}
-
 .logopmi {
   width: 100px;
   height: 40px;
@@ -79,6 +72,6 @@ h6 {
 @media (max-width: 767px) {
   /* Media query untuk layar dengan lebar maksimal 767px */
   .coba {
-    margin: 30% 0; /* Mengubah margin atas dan bawah saat layar kecil */
+    margin: 5% 0; /* Mengubah margin atas dan bawah saat layar kecil */
   }
 }
