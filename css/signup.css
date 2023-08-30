@@ -30,3 +30,16 @@ h6 {
   background: #dac52c;
   border-radius: 100%;
 }
+
+.responsive {
+  width: 375px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* Media query untuk layar dengan lebar maksimal 767px */
+@media (max-width: 767px) {
+  img {
+    display: none; /* Menghilangkan gambar */
+  }
+}
