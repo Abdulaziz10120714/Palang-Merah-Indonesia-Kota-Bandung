@@ -47,13 +47,6 @@ h6 {
   }
 }
 
-.lingkaran1 {
-  width: 200px;
-  height: 200px;
-  background: #dac52c;
-  border-radius: 100%;
-}
-
 .logopmi {
   width: 100px;
   height: 40px;
@@ -74,11 +67,16 @@ h6 {
 
 .coba {
   margin: 5% 0;
+  max-width: 100%; /* Memastikan konten tidak melebihi lebar kolom */
 }
 
 @media (max-width: 767px) {
-  /* Media query untuk layar dengan lebar maksimal 767px */
   .coba {
-    margin: 30% 0; /* Mengubah margin atas dan bawah saat layar kecil */
+    position: absolute; /* Mengatur posisi absolut */
+    left: 0; /* Mengatur posisi horizontal ke kiri */
+    right: 0; /* Mengatur posisi horizontal ke kanan */
+    top: 50%; /* Mengatur posisi vertikal di tengah atas */
+    transform: translateY(-50%); /* Mengatur posisi vertikal */
+    margin: 0; /* Menghapus margin */
   }
 }
