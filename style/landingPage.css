@@ -4,7 +4,7 @@ body {
 
 /* navbar */
 body .navbar {
-  font-weight: 500;
+  font-weight: 700;
 }
 .nav-item {
   margin: auto 20px;
@@ -36,35 +36,36 @@ body .navbar {
 
 /* isi */
 .profile {
-  margin-top: -257px;
+  margin-top: -150px;
+  padding-top: 150px;
   z-index: 999;
 }
 /* isi end */
 
-/* Merubah container kartu menjadi lebih kecil dan lebih estetik */
 .aktifitas.container {
-  max-width: 1000px; /* Atur ukuran yang sesuai */
-  padding: 20px; /* Atur padding sesuai kebutuhan */
+  max-width: 1000px;
+  padding: 20px;
+}
+.aktifitas.container .btn {
+  background-color: #177e89;
 }
 
-/* Mengoptimalkan gambar slide */
 @media (max-width: 768px) {
   .carousel-item img {
-    width: 100%; /* Mengisi lebar kontainer */
-    height: auto; /* Mengikuti aspek rasio gambar */
-    margin-top: 0; /* Menghilangkan margin atas pada layar kecil */
+    width: 100%;
+    height: auto;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 991px) {
   .gambarGerak {
-    display: none; /* Menyembunyikan gambar slide */
+    display: none;
   }
 
-  /* Mengganti border radius pada kontainer kartu menjadi tidak ada */
   .aktifitas.container {
     border-radius: 0;
-    margin-top: 70px; /* Menghilangkan border radius */
+    margin-top: 70px;
   }
 
   .profile {
