@@ -83,6 +83,7 @@ body .navbar {
 }
 
 .link-image img {
+  display: block;
   margin-bottom: 20px;
   filter: grayscale(1);
   transition: 0.5s;
@@ -90,6 +91,14 @@ body .navbar {
 .link-image img:hover {
   filter: grayscale(0);
 }
+
+.link-image .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* LINK IMAGE end */
 
 /* footer */
