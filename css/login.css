@@ -18,7 +18,7 @@ body {
 }
 
 /* Media query untuk ukuran layar yang lebih kecil */
-@media (max-width: 767px) {
+@media (max-width: 767px) and (max-width: 1024px) {
   body {
     font-size: 14px; /* Ukuran teks untuk layar kecil */
   }
@@ -80,3 +80,41 @@ h6 {
     margin: 0; /* Menghapus margin */
   }
 }
+
+.res {
+  padding: 1rem; /* Padding umum */
+}
+
+@media (min-width: 768px) {
+  .res {
+    padding: 2rem; /* Padding untuk perangkat dengan lebar minimal 768px (tablet dan lebih besar) */
+  }
+}
+
+@media (min-width: 992px) {
+  .res {
+    padding: 3rem; /* Padding untuk perangkat dengan lebar minimal 992px (desktop dan lebih besar) */
+  }
+}
+
+/* Margin horizontal */
+.mx-md-10 {
+  margin-left: -1rem; /* Margin kiri umum */
+  margin-right: -1rem; /* Margin kanan umum */
+}
+
+@media (min-width: 1024px) {
+  .mx-md-10 {
+    margin-left: -2rem; /* Margin kiri untuk perangkat dengan lebar minimal 768px (tablet dan lebih besar) */
+    margin-right: -2rem; /* Margin kanan untuk perangkat dengan lebar minimal 768px (tablet dan lebih besar) */
+  }
+}
+
+@media (min-width: 992px) {
+  .mx-md-10 {
+    margin-left: -3rem; /* Margin kiri untuk perangkat dengan lebar minimal 992px (desktop dan lebih besar) */
+    margin-right: -3rem; /* Margin kanan untuk perangkat dengan lebar minimal 992px (desktop dan lebih besar) */
+  }
+}
+
+/* ------------ */
