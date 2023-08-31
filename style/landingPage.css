@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -72,12 +76,21 @@ body .navbar {
 }
 /* agenda end */
 
-/* FAQ */
-.FAQ .btn {
-  background: rgb(23, 126, 137);
-  border: rgb(23, 126, 137) solid 1px;
+/* LINK IMAGE */
+.link-image {
+  background: rgb(8, 76, 97, 0.4);
+  width: 100%;
 }
-/* FAQ end */
+
+.link-image img {
+  margin-bottom: 20px;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.link-image img:hover {
+  filter: grayscale(0);
+}
+/* LINK IMAGE end */
 
 /* footer */
 .footer {
@@ -92,12 +105,11 @@ body .navbar {
     height: auto;
     margin-top: 0;
   }
-  .FAQ .col-md-8 {
-    margin-top: 20px;
+  .list-card {
+    margin: 10px auto;
   }
-
-  .FAQ .col-md-4 {
-    margin-bottom: 20px;
+  .col-12 {
+    padding: 0 10px;
   }
 }
 
@@ -113,5 +125,16 @@ body .navbar {
 
   .profile {
     margin-top: 20px;
+  }
+
+  .list-card {
+    width: 100%;
+    margin: 10px auto;
+    float: none !important;
+  }
+
+  .col-12 {
+    width: 100%;
+    padding: 0 15px;
   }
 }
