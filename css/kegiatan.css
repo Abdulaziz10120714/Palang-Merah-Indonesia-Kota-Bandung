@@ -1,12 +1,5 @@
-.image-bg {
-    background-image: url('../../magang_unikom_2023/img/kegiatan/PMI.jpeg'); /* Ganti path dengan path gambar Anda */
-    background-size: cover; /* Sesuaikan ukuran latar belakang */
-    background-position: center center; /* Atur posisi latar belakang */
-    background-attachment: fixed; /* Biarkan gambar tetap ketika menggulir */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), /* Gradien overlay */
-                linear-gradient(to bottom, #f06, #9c0); /* Gradien latar belakang */
-    height: 100vh; /* Biarkan kontainer mengambil tinggi layar penuh */
-    color: white; /* Warna teks untuk kontras yang baik */
-    text-align: center; /* Atur jika diperlukan */
-    padding: 50px; /* Sesuaikan padding sesuai kebutuhan Anda */
-  }
+.atas {
+  background-image: url(../../magang_unikom_2023/img/kegiatan/PMI.jpeg);
+  background-repeat: no-repeat;
+
+}
