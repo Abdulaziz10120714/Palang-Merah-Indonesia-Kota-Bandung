@@ -83,7 +83,6 @@ body .navbar {
 }
 
 .link-image img {
-  display: block;
   margin-bottom: 20px;
   filter: grayscale(1);
   transition: 0.5s;
@@ -91,12 +90,32 @@ body .navbar {
 .link-image img:hover {
   filter: grayscale(0);
 }
+.list-kegiatan {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  cursor: pointer;
+}
 
-.link-image .overlay {
+.list-kegiatan:hover > .judul-kegiatan {
+  background-color: #177e89;
+}
+
+.img-kegiatan {
+  position: relative;
+  height: 300px;
+  width: 600px;
+}
+.judul-kegiatan {
   position: absolute;
-  bottom: 0;
+  height: 40px;
+  color: white;
+  background-color: rgba(181, 107, 109, 0.22);
+  font-weight: bold;
   left: 0;
-  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 3px;
 }
 
 /* LINK IMAGE end */
