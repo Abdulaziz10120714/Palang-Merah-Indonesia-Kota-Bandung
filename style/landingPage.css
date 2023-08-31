@@ -48,6 +48,7 @@ body .navbar {
 }
 .aktifitas.container .btn {
   background-color: #177e89;
+  border: rgb(23, 126, 137) solid 1px;
 }
 
 /* agenda */
@@ -58,17 +59,31 @@ body .navbar {
 }
 
 .agenda-isi {
-  background: rgb(23, 126, 137);
+  background: rgb(23, 126, 137, 0.4);
 }
 
 .agenda-isi .row .col-12 {
   margin-top: -70px;
 }
 
-.btn-lihat-kegiatan {
-  background: rgb(8, 76, 97);
+.btn-agenda {
+  background: rgb(23, 126, 137);
+  border: rgb(23, 126, 137) solid 1px;
 }
 /* agenda end */
+
+/* FAQ */
+.FAQ .btn {
+  background: rgb(23, 126, 137);
+  border: rgb(23, 126, 137) solid 1px;
+}
+/* FAQ end */
+
+/* footer */
+.footer {
+  background: rgb(8, 76, 97);
+}
+/* footer end */
 
 /* media quere */
 @media (max-width: 768px) {
@@ -76,6 +91,13 @@ body .navbar {
     width: 100%;
     height: auto;
     margin-top: 0;
+  }
+  .FAQ .col-md-8 {
+    margin-top: 20px;
+  }
+
+  .FAQ .col-md-4 {
+    margin-bottom: 20px;
   }
 }
 
