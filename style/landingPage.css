@@ -44,6 +44,10 @@ body .navbar {
   padding-top: 200px;
   z-index: 999;
 }
+
+.profile p {
+  text-align: justify;
+}
 /* isi end */
 
 .aktifitas.container {
@@ -83,7 +87,6 @@ body .navbar {
 }
 
 .link-image img {
-  border-radius: 10%;
   padding: 0 !important;
   left: 0 !important;
   width: 200px;
@@ -100,10 +103,16 @@ body .navbar {
   height: 200px;
   width: 200px;
   cursor: pointer;
+  border-radius: 10%;
+  overflow: hidden !important;
 }
 
 .list-kegiatan:hover > .judul-kegiatan {
   background-color: #177e89;
+}
+
+.list-kegiatan:hover .img-kegiatan img {
+  filter: grayscale(0);
 }
 
 .img-kegiatan {
@@ -131,18 +140,48 @@ body .navbar {
 /* /* footer * */
 
 .footer {
-  background: rgb(8, 76, 97, 1);
+  background-color: #084c61; /* Background color */
+  padding: 40px 0; /* Padding for top and bottom */
+  color: #fff; /* Text color */
 }
-.txticon {
-  margin: 0;
-  color: white;
-  display: inline;
-  margin-right: 75%; /* Tambahkan margin kiri di sini */
+
+.footer iframe {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  border: none; /* Remove iframe border */
+}
+
+.footer h1 {
+  font-weight: 400;
+  margin-top: 20px; /* Margin for top spacing */
+}
+
+.footer p {
+  font-size: 18px; /* Font size for address */
+  position: relative;
+}
+
+.footer i {
+  font-size: 24px; /* Icon size */
+  margin-right: 10px; /* Spacing between icon and text */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.small-address {
+  font-size: 14px; /* Font size for the smaller address */
 }
 
 .copy {
-  background: #177e89;
+  background-color: #177e89; /* Copyright section background color */
+  padding: 10px 0; /* Padding for top and bottom */
 }
+
+.copy p {
+  font-weight: bold;
+}
+
 /* footer end */
 
 /* media quere */
@@ -151,6 +190,9 @@ body .navbar {
     width: 100%;
     height: auto;
     margin-top: 0;
+  }
+  .footer iframe {
+    height: 200px; /* Adjust the height for smaller screens */
   }
   .list-card {
     margin: 10px auto;
@@ -165,6 +207,12 @@ body .navbar {
   }
 }
 
+@media (max-width: 820px) {
+  .link-image .row-cols-sm-3 {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 991px) {
   .gambarGerak {
     display: none;
