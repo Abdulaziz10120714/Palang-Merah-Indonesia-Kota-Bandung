@@ -83,6 +83,7 @@ body .navbar {
 }
 
 .link-image img {
+  padding: 0 !important;
   left: 0 !important;
   width: 300px;
   height: 300px;
@@ -93,7 +94,7 @@ body .navbar {
   filter: grayscale(0);
 }
 .list-kegiatan {
-  float: left;
+  margin-bottom: 20px;
   border: 1px solid red;
   position: relative;
   height: 300px;
