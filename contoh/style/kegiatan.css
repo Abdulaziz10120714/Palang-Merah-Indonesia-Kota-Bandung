@@ -1,0 +1,26 @@
+.banner-title{
+    height: 250px;
+    overflow: hidden;
+    
+    position: relative;
+    padding:0px !important;
+}
+.gradient-banner{
+    height: 250px;
+    background:linear-gradient(to right, #084C61 ,#084C61 ,#084C61 , rgba(255,255,255,0.22));
+    position: absolute;
+    top:0;
+}
+.title-page{
+    height: 250px;
+    position: relative;
+    color:white;
+    z-index: 99;
+    padding:5%
+    
+}
+.image-banner{
+    position: relative;
+    top:0;
+    
+}
