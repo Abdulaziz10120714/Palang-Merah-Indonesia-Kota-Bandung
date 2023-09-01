@@ -93,7 +93,7 @@ body .navbar {
 .list-kegiatan {
   position: relative;
   height: 300px;
-  width: 600px;
+  width: 300px;
   cursor: pointer;
 }
 
@@ -104,7 +104,7 @@ body .navbar {
 .img-kegiatan {
   position: relative;
   height: 300px;
-  width: 600px;
+  width: 300px;
 }
 .judul-kegiatan {
   position: absolute;
