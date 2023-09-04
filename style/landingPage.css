@@ -204,8 +204,10 @@ body .navbar {
   }
 
   .footer .txtpmi {
-    display: flex;
-    justify-content: center;
+  }
+
+  .footer .alamat p {
+    padding: none;
   }
   .footer .alamat p,
   .telfon p,
@@ -218,14 +220,12 @@ body .navbar {
     font-size: 0.5em;
     font-weight: bold;
   }
-}
 
-@media (max-width: 820px) {
-  .link-image .row-cols-sm-3 {
-    display: flex;
-    justify-content: center;
+  .pmi {
+    text-align: center;
   }
 }
+
 @media (max-width: 991px) {
   .gambarGerak {
     display: none;
@@ -252,8 +252,6 @@ body .navbar {
   }
 
   .footer .txtpmi {
-    display: flex;
-    justify-content: center;
   }
 
   .footer .alamat p,
