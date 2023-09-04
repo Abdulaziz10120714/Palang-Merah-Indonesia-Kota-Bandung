@@ -1,3 +1,6 @@
+body .navbar {
+    font-weight: 600;
+  }
 .banner-title{
     height: 250px;
     overflow: hidden;
