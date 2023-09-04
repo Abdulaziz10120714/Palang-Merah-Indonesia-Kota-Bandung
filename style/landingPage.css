@@ -140,48 +140,51 @@ body .navbar {
 /* /* footer * */
 
 .footer {
-  background-color: #084c61; /* Background color */
-  padding: 40px 0; /* Padding for top and bottom */
-  color: #fff; /* Text color */
+  background-color: #084c61;
+  padding: 40px 0;
+  color: #fff;
 }
 
 .footer iframe {
-  width: 100%;
-  height: 300px; /* Adjust the height as needed */
-  border: none; /* Remove iframe border */
+  width: 80%;
+  height: 300px;
 }
 
 .footer h1 {
   font-weight: 400;
-  margin-top: 20px; /* Margin for top spacing */
+  margin-top: 20px;
 }
 
 .footer p {
-  font-size: 18px; /* Font size for address */
+  font-size: 18px;
   position: relative;
 }
 
 .footer i {
-  font-size: 24px; /* Icon size */
-  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 24px;
+  margin-right: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.small-address {
-  font-size: 14px; /* Font size for the smaller address */
-}
-
 .copy {
-  background-color: #177e89; /* Copyright section background color */
-  padding: 10px 0; /* Padding for top and bottom */
+  background-color: #177e89;
+  padding: 10px 0;
 }
 
 .copy p {
+  font-size: 0.7em;
   font-weight: bold;
 }
 
+.footer .alamat p,
+.telfon p,
+.instagram p,
+.facebook p {
+  text-align: center;
+  font-size: 0.7rem;
+}
 /* footer end */
 
 /* media quere */
@@ -192,7 +195,7 @@ body .navbar {
     margin-top: 0;
   }
   .footer iframe {
-    height: 200px; /* Adjust the height for smaller screens */
+    height: 200px;
   }
   .list-card {
     margin: 10px auto;
@@ -202,6 +205,11 @@ body .navbar {
   }
 
   .link-image .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .txtpmi {
     display: flex;
     justify-content: center;
   }
@@ -236,5 +244,10 @@ body .navbar {
   .col-12 {
     width: 100%;
     padding: 0 15px;
+  }
+
+  .footer .txtpmi {
+    display: flex;
+    justify-content: center;
   }
 }
