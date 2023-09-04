@@ -16,9 +16,13 @@ body .navbar {
 
 /* navbar itemm */
 
-.isi {
+.visi-misi {
   margin-top: 100px !important;
-  font-weight: 600;
+}
+
+.isi p {
+  margin-top: 20px;
+  font-weight: 300px;
 }
 
 /* /* footer * */
