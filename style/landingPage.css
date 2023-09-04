@@ -188,6 +188,11 @@ body .navbar {
     height: auto;
     margin-top: 0;
   }
+
+  .profile .container {
+    margin-top: 1rem !important;
+  }
+
   .footer iframe {
     height: 200px;
   }
@@ -237,7 +242,7 @@ body .navbar {
   }
 
   .profile {
-    margin-top: 20px;
+    margin-top: 1rem !important;
   }
 
   .list-card {
