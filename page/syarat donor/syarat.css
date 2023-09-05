@@ -16,17 +16,48 @@ body .navbar {
 
 /* navbar end */
 
-/* VISI DAN MISI */
-.visi-misi {
-  margin-top: 100px !important;
+/* syarat */
+.syarat {
+  margin-top: 100px;
 }
 
-.isi p {
+.syarat .row {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.syarat .col-sm-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.syarat .atas {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #ffc857;
+  border-radius: 10px;
+}
+
+.syarat .bawah {
+  background-color: #084c61;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.syarat .btn {
+  background-color: #177e89;
+  border: rgb(23, 126, 137) solid 1px;
   margin-top: 20px;
-  font-weight: 300px;
 }
 
-/* visi dan misi end */
+/* syarat end */
 
 /* /* footer * */
 
