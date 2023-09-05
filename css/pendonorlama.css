@@ -1,3 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 20px;
+}
+
 @media (min-width: 500px) {
   .gradient-form {
     height: 100vh !important;
