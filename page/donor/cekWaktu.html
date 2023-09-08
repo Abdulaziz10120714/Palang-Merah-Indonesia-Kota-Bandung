@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PMI KOTA BANDUNG</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/kegiatan.css">
+    <link rel="stylesheet" href="./cekWaktu.css">
+    <link rel="stylesheet" href="../../style/font.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <!-- navbar -->
   <body>
-    <nav class="navbar navbar-expand-lg bg-white box shadow fixed-top">
+    <nav class="navbar navbar-expand-lg box shadow fixed-top bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">
           <img
@@ -93,39 +95,75 @@
   
     <!-- navbar -->
 
-    <!-- jumbotron -->
-    <div class="mt-5 p-5 col-md-12 banner-title d-flex">
-      <div class="col-md-8 title-page ">
-<div class="lingkaran1 ms-5">
-        <h1 style="font-family: 'Alex Brush'; font-size: 80px;" >Seputar</h1>
-          <h1 class="ms-5" style="font-family: poppins;">Kegiatan</h1> 
+<!-- cari -->
+<div class="cari container-fluid shadow  ">
+  <div class="container ">
+    <div class="row d-flex justify-content-start">
+      <div class="col-md-5">
+        <div class="small fw-semibold ">Cari Waktu Donor Anda!</div>
+        <div class="input-group">
+          <input class="form-control  border rounded-pill text-black" type="search" placeholder="Silahkan Masukan ID Donor Anda" id="example-search-input">
+          <span class="input-group-append">
+            <button class="icon btn btn-outline-secondar border rounded-pill text-black" disabled>
+              <i data-feather="search"></i>
+              <button class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white" type="button">Cari</button>
+            </button>
+          </span>
+        </div>
       </div>
-      </div>
-      <div class="col-md-4 image-banner">
+    </div> 
+  </div>
+  <div class="info container mt-5 p-3 rounded-5">
+    <div class="tanggal mt-2"><p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p></div>
+    <div class="username"><p class="fw-semibold text-white">Hari Yang Cerah, Alfi Aditya! <br>
+      <span class="fw-normal">Semoga Harimu Menyenangkan!</span></p></div>
+    <div class="alert"></div>
+  </div>
+</div>
 
-        <img src="../../img/kegiatan/PMI.jpeg" alt="Foto Kegiatan" class="col-md-12">
-      </div>
-      <div class="col-md-12 gradient-banner">
+<!-- cari end -->
 
-      </div>
-    </div>
-    
-   
-    <div class="mt-0 p-0 text-white "  class="rounded float-end" style=" height: 25px;background:linear-gradient(to left, #084C61 , white)">
-    
-    </div>
-  <!-- jumbotron -->
-
-
+<!-- informasi -->
+<!-- informasi end -->
  
 
-</section>
-<!-- footer -->
-<footer>
-  <div class="text-center text-white p-1" style="background-color:rgb(23, 126, 137)">
-    Copyright © 2023 UTD PMI Kota Bandung . All rights reserved.
+    <!-- Footer section -->
+    <footer class="footer container-fluid mt-3 "> 
+      <div class="row mx-0">
+          <div class="maps col-md-6 d-flex justify-content-cener">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.395596060229!2d107.6197288!3d-6.9086646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e635b9b3db59%3A0xb77d74e050dde5aa!2sPMI%20Kota%20Bandung!5e0!3m2!1sid!2sid!4v1693533088941!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-5 me-5"></iframe>
+          </div>
+          <div class="pmi col-md-6  flex-column">
+            <h1 class="txtpmi mt-4 text-white ps-5">PMI KOTA BANDUNG</h1>
+            <div class="alamat d-flex align-items-center ps-5">
+                <i data-feather="map-pin"></i>
+                <p class="align-items-center ms-3 ">Jl. Aceh No.79, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
+            </div>
+            <div class="telfon d-flex align-items-center ps-5">
+                <i data-feather="phone-call"></i>
+                <p class="align-items-center ms-3">(022) 4207052 / 082130122784 (Pelayanan Darah)</p>
+            </div>
+            <div class="instagram d-flex align-items-center ps-5">
+                <i data-feather="instagram"></i>
+                <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">pmikotabdg</a></p>
+            </div>
+            <div class="facebook d-flex align-items-center ps-5">
+                <i data-feather="facebook"></i>
+                <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">PMI Kota Bandung</a></p>
+            </div>
+        </div>
   </footer>
-<script src="../../seputarkegiatan.js"></script>
-<script src="../../js/bootstrap.bundle.min.js"></script>
+
+  <div class="copy container-fluid">
+    <p class="text-center py-2 text-white ">Copyright &copy; 2023 UTD PMI Kota Bandung. All rights reserved.</p>
+</div>
+  <!-- footer end -->
+
+  <script>
+    var dt = new Date();
+    document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleString();
+  </script>
+  <script>feather.replace();</script>
+  <script src="../../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -16,6 +16,30 @@ body .navbar {
 
 /* navbar end */
 
+/* isi */
+.cari {
+  margin-top: 100px;
+}
+.icon {
+  margin-left: -49px;
+}
+.form-control {
+}
+
+.cari .tombol {
+  background-color: #177e89;
+}
+
+/* isi end */
+
+/* informasi */
+
+.info {
+  background-color: #084c61;
+}
+
+/* informasi end */
+
 /* /* footer * */
 
 .footer {
