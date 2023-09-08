@@ -67,6 +67,9 @@ h6 {
   img {
     display: none; /* Menghilangkan gambar */
   }
+  img.logo {
+    display: block; /* Menampilkan gambar */
+  }
 }
 
 .coba {
