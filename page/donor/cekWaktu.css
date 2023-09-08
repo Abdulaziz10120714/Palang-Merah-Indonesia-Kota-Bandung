@@ -38,6 +38,23 @@ body .navbar {
   background-color: #084c61;
 }
 
+.info .tanggal {
+  background-color: #177e89;
+  padding: 5px;
+}
+
+.info .alert-bisa span {
+  background-color: #ffc857;
+  border-radius: 5px;
+  color: #12b436;
+}
+
+.info .alert-tidak span {
+  background-color: #ffc857;
+  border-radius: 5px;
+  color: #ff0000;
+}
+
 /* informasi end */
 
 /* /* footer * */
@@ -111,6 +128,10 @@ body .navbar {
 
   .pmi {
     text-align: center;
+  }
+
+  .info .gambar img {
+    display: none;
   }
 }
 

@@ -97,27 +97,35 @@
 
 <!-- cari -->
 <div class="cari container-fluid shadow  ">
-  <div class="container ">
-    <div class="row d-flex justify-content-start">
-      <div class="col-md-5">
-        <div class="small fw-semibold ">Cari Waktu Donor Anda!</div>
-        <div class="input-group">
-          <input class="form-control  border rounded-pill text-black" type="search" placeholder="Silahkan Masukan ID Donor Anda" id="example-search-input">
-          <span class="input-group-append">
-            <button class="icon btn btn-outline-secondar border rounded-pill text-black" disabled>
-              <i data-feather="search"></i>
-              <button class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white" type="button">Cari</button>
-            </button>
-          </span>
+        <div class="container ">
+          <div class="row d-flex justify-content-start">
+            <div class="col-md-5">
+              <div class="small fw-semibold ">Cari Waktu Donor Anda!</div>
+              <div class="input-group mt-2">
+                <input class="form-control  border rounded-pill text-black " type="search" placeholder="Silahkan Masukan ID Donor Anda" style="font-size: 2.3vmin;" id="example-search-input">
+                <span class="input-group-append">
+                  <button class="icon btn btn-outline-secondar border rounded-pill text-black" disabled>
+                    <i data-feather="search"></i>
+                    <button class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white" type="button">Cari</button>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="info container mt-5 p-3 rounded-5 ps-5">
+          <div class="row row-sm-1 row-xl-2">
+            <div class="isi col-8">
+              <div class="tanggal d-inline-block rounded-5 text-white mt-2"style="font-size: 2vmin;"><p class="mb-0">Tanggal/Waktu: <span id="tanggalwaktu"></span></p></div>
+              <div class="username mt-4"><p class="fw-bold text-white"style="font-size: 4vmin;">Hari Yang Cerah, Alfi Aditya! <br>
+                <span class="fw-normal "style="font-size: 2vmin;">Semoga Harimu Menyenangkan!</span></p></div>
+              <div class="alert-bisa text-white fw-bold mt-2" style="font-size: 3vmin;"><p>Selamat  <span class="p-1">Sudah Bisa</span>  Mendonorkan Darah</p></div>
+              <div class="alert-tidak text-white fw-bold mt-2" style="font-size: 3vmin;"><p>Maaf  <span class="p-1">Belum Bisa</span>  Mendonorkan Darah</p></div>
+            </div>
+        <div class="gambar col d-flex justify-content-center">
+          <img src="https://source.unsplash.com/random/200x200/?task&4" alt="">
         </div>
       </div>
-    </div> 
-  </div>
-  <div class="info container mt-5 p-3 rounded-5">
-    <div class="tanggal mt-2"><p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p></div>
-    <div class="username"><p class="fw-semibold text-white">Hari Yang Cerah, Alfi Aditya! <br>
-      <span class="fw-normal">Semoga Harimu Menyenangkan!</span></p></div>
-    <div class="alert"></div>
   </div>
 </div>
 
