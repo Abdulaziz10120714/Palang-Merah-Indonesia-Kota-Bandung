@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PMI KOTA BANDUNG</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./cekWaktu.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./cekWaktu.css" />
     <link rel="stylesheet" href="../../style/font.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -14,12 +14,7 @@
     <nav class="navbar navbar-expand-lg box shadow fixed-top bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">
-          <img
-            src="../../img/logo.png"
-            alt=""
-            width="100%"
-            height="40"
-          />
+          <img src="../../img/logo.png" alt="" width="100%" height="40" />
         </a>
         <button
           class="navbar-toggler"
@@ -38,12 +33,17 @@
         >
           <ul class="navbar-nav fw-bold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#" 
+                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -51,13 +51,27 @@
                 Unit Donor Darah
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../../page/auth/signup.html">Daftar Online</a></li>
-                <li><a class="dropdown-item" href="../../style/404.html">CeK Waktu Donor</a></li>
                 <li>
-                  <a class="dropdown-item" href="../../page/MobileUnit/mobileunit.html">Jadwal Mobile Unit</a>
+                  <a class="dropdown-item" href="../../page/auth/signup.html"
+                    >Daftar Online</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../../style/404.html">Stok Darah</a>
+                  <a class="dropdown-item" href="../../style/404.html"
+                    >CeK Waktu Donor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../page/MobileUnit/mobileunit.html"
+                    >Jadwal Mobile Unit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../style/404.html"
+                    >Stok Darah</a
+                  >
                 </li>
               </ul>
             </li>
@@ -72,10 +86,20 @@
                 Markas
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../../style/404.html">markas 1</a></li>
-                <li><a class="dropdown-item" href="../../style/404.html">Markas 2</a></li>
                 <li>
-                  <a class="dropdown-item" href="../../style/404.html">Markas 3</a>
+                  <a class="dropdown-item" href="../../style/404.html"
+                    >markas 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../style/404.html"
+                    >Markas 2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../style/404.html"
+                    >Markas 3</a
+                  >
                 </li>
               </ul>
             </li>
@@ -83,95 +107,238 @@
               <a class="nav-link" href="../../style/404.html">Artikel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../page/kegiatan/seputarkegiatan.html">Kegiatan</a>
+              <a
+                class="nav-link"
+                href="../../page/kegiatan/seputarkegiatan.html"
+                >Kegiatan</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../page/about/about.html">About us</a>
+              <a class="nav-link" href="../../page/about/about.html"
+                >About us</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  
+
     <!-- navbar -->
 
-<!-- cari -->
-<div class="cari container-fluid shadow  ">
-        <div class="container ">
-          <div class="row d-flex justify-content-start">
-            <div class="col-md-5">
-              <div class="small fw-semibold ">Cari Waktu Donor Anda!</div>
-              <div class="input-group mt-2">
-                <input class="form-control  border rounded-pill text-black " type="search" placeholder="Silahkan Masukan ID Donor Anda" style="font-size: 2.3vmin;" id="example-search-input">
-                <span class="input-group-append">
-                  <button class="icon btn btn-outline-secondar border rounded-pill text-black" disabled>
-                    <i data-feather="search"></i>
-                    <button class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white" type="button">Cari</button>
+    <!-- cari -->
+    <div class="cari container-fluid ">
+      <div class="container">
+        <div class="row d-flex justify-content-start">
+          <div class="col-md-5">
+            <div class="small fw-semibold mt-2">Cari Waktu Donor Anda!</div>
+            <div class="input-group mt-2">
+              <input
+                class="form-control border rounded-pill text-black"
+                type="search"
+                placeholder="Silahkan Masukan ID Donor Anda"
+                style="font-size: 2vmin"
+                id="example-search-input"
+              />
+              <span class="input-group-append">
+                <button
+                  class="icon btn btn-outline-secondar border rounded-pill text-black"
+                  disabled
+                >
+                  <i data-feather="search"></i>
+                  <button
+                    class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white"
+                    type="button"
+                  >
+                    Cari
                   </button>
-                </span>
-              </div>
+                </button>
+              </span>
             </div>
-          </div> 
-        </div>
-        <div class="info container mt-5 p-3 rounded-5 ps-5">
-          <div class="row row-sm-1 row-xl-2">
-            <div class="isi col-8">
-              <div class="tanggal d-inline-block rounded-5 text-white mt-2"style="font-size: 2vmin;"><p class="mb-0">Tanggal/Waktu: <span id="tanggalwaktu"></span></p></div>
-              <div class="username mt-4"><p class="fw-bold text-white"style="font-size: 4vmin;">Hari Yang Cerah, Alfi Aditya! <br>
-                <span class="fw-normal "style="font-size: 2vmin;">Semoga Harimu Menyenangkan!</span></p></div>
-              <div class="alert-bisa text-white fw-bold mt-2" style="font-size: 3vmin;"><p>Selamat  <span class="p-1">Sudah Bisa</span>  Mendonorkan Darah</p></div>
-              <div class="alert-tidak text-white fw-bold mt-2" style="font-size: 3vmin;"><p>Maaf  <span class="p-1">Belum Bisa</span>  Mendonorkan Darah</p></div>
-            </div>
-        <div class="gambar col d-flex justify-content-center">
-          <img src="https://source.unsplash.com/random/200x200/?task&4" alt="">
+          </div>
         </div>
       </div>
-  </div>
-</div>
-
-<!-- cari end -->
-
-<!-- informasi -->
-<!-- informasi end -->
- 
-
-    <!-- Footer section -->
-    <footer class="footer container-fluid mt-3 "> 
-      <div class="row mx-0">
-          <div class="maps col-md-6 d-flex justify-content-cener">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.395596060229!2d107.6197288!3d-6.9086646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e635b9b3db59%3A0xb77d74e050dde5aa!2sPMI%20Kota%20Bandung!5e0!3m2!1sid!2sid!4v1693533088941!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-5 me-5"></iframe>
+      <div class="info container mt-5 p-3 rounded-5 ps-5">
+        <div class="row row-sm-1 row-xl-2">
+          <div class="isi col-md-6 col-sm-12">
+            <div
+              class="tanggal d-inline-block rounded-5 text-white mt-2"
+              style="font-size: 2vmin"
+            >
+              <p class="mb-0">Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+            </div>
+            <div class="username mt-4">
+              <p class="fw-bold text-white" style="font-size: 4vmin">
+                Hari Yang Cerah, Alfi Aditya! <br />
+                <span class="fw-normal" style="font-size: 2vmin"
+                  >Semoga Harimu Menyenangkan!</span
+                >
+              </p>
+            </div>
+            <div
+              class="alert-bisa text-white fw-bold mt-2"
+              style="font-size: 3vmin"
+            >
+              <p>
+                Selamat <span class="p-1">Sudah Bisa</span> Mendonorkan Darah
+              </p>
+            </div>
+            <div
+              class="alert-tidak text-white fw-bold mt-2"
+              style="font-size: 3vmin"
+            >
+              <p>Maaf <span class="p-1">Belum Bisa</span> Mendonorkan Darah</p>
+            </div>
           </div>
-          <div class="pmi col-md-6  flex-column">
-            <h1 class="txtpmi mt-4 text-white ps-5">PMI KOTA BANDUNG</h1>
-            <div class="alamat d-flex align-items-center ps-5">
-                <i data-feather="map-pin"></i>
-                <p class="align-items-center ms-3 ">Jl. Aceh No.79, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
-            </div>
-            <div class="telfon d-flex align-items-center ps-5">
-                <i data-feather="phone-call"></i>
-                <p class="align-items-center ms-3">(022) 4207052 / 082130122784 (Pelayanan Darah)</p>
-            </div>
-            <div class="instagram d-flex align-items-center ps-5">
-                <i data-feather="instagram"></i>
-                <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">pmikotabdg</a></p>
-            </div>
-            <div class="facebook d-flex align-items-center ps-5">
-                <i data-feather="facebook"></i>
-                <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">PMI Kota Bandung</a></p>
-            </div>
+          <div class="gambar col d-flex justify-content-center">
+            <img
+              src="https://source.unsplash.com/random/200x200/?task&4"
+              alt=""
+            />
+          </div>
         </div>
-  </footer>
+      </div>
 
-  <div class="copy container-fluid">
-    <p class="text-center py-2 text-white ">Copyright &copy; 2023 UTD PMI Kota Bandung. All rights reserved.</p>
-</div>
-  <!-- footer end -->
+      <div class="data container my-3">
+        <div class="row row-sm-1 row-xl-2">
+          <div class="identitas col-md-6 mt-5">
+            <div class="cont-iden container">
+              <div
+                class="banner-iden container text-center"
+                style="font-size: 4vmin"
+              >
+                <p class="mb-0">IDENTITAS DONOR</p>
+              </div>
+              <div class="isi-inden container p-3 pt-5">
+                <div class="small fw-semibold mt-4">ID DONOR</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">NAMA</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">GOLONGAN DARAH</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">
+                  Tgl. Kembali Donor Reguler
+                </div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
 
-  <script>
-    var dt = new Date();
-    document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleString();
-  </script>
-  <script>feather.replace();</script>
-  <script src="../../js/bootstrap.bundle.min.js"></script>
+          <div class="identitas col-md-6 mt-5">
+            <div class="cont-riwayat container">
+              <div
+                class="banner-riwayat container text-center"
+                style="font-size: 4vmin"
+              >
+                <p class="mb-0">RIWAYAT DONOR TERAKHIR</p>
+              </div>
+              <div class="isi-riwayat container p-3 pt-5">
+                <div class="small fw-semibold mt-4">Tanggal</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">Tempat Kegiatan</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">Pemeriksaan Medis</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">Pemeriksaan HB</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+                <div class="small fw-semibold mt-2">Pengambilan Darah</div>
+                <input
+                  type="text"
+                  class="form-control mt-1"
+                  placeholder=""
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="d-flex justify-content-center my-5">
+          <button class="btn-mobile btn btn-primary rounded-pill" type="button " src="../MobileUnit/mobileunit.html">Lihat Mobile Unit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- cari end -->
+
+        <!-- Footer section -->
+        <footer class="footer container-fluid mt-3 "> 
+          <div class="row mx-0">
+              <div class="maps col-md-6 d-flex justify-content-cener">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.395596060229!2d107.6197288!3d-6.9086646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e635b9b3db59%3A0xb77d74e050dde5aa!2sPMI%20Kota%20Bandung!5e0!3m2!1sid!2sid!4v1693533088941!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-5 me-5"></iframe>
+              </div>
+              <div class="pmi col-md-6  flex-column">
+                <h1 class="txtpmi mt-4 text-white ps-5">PMI KOTA BANDUNG</h1>
+                <div class="alamat d-flex align-items-center ps-5">
+                    <i data-feather="map-pin"></i>
+                    <p class="align-items-center ms-3 ">Jl. Aceh No.79, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
+                </div>
+                <div class="telfon d-flex align-items-center ps-5">
+                    <i data-feather="phone-call"></i>
+                    <p class="align-items-center ms-3">(022) 4207052 / 082130122784 (Pelayanan Darah)</p>
+                </div>
+                <div class="instagram d-flex align-items-center ps-5">
+                    <i data-feather="instagram"></i>
+                    <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">pmikotabdg</a></p>
+                </div>
+                <div class="facebook d-flex align-items-center ps-5">
+                    <i data-feather="facebook"></i>
+                    <p class="align-items-center ms-3"><a href="./style/404.html" style="text-decoration:none">PMI Kota Bandung</a></p>
+                </div>
+            </div>
+      </footer>
+  
+      <div class="copy container-fluid">
+        <p class="text-center py-2 text-white ">Copyright &copy; 2023 UTD PMI Kota Bandung. All rights reserved.</p>
+     </div>
+      <!-- footer end -->
+
+    <script>
+      var dt = new Date();
+      document.getElementById('tanggalwaktu').innerHTML = dt.toLocaleString();
+    </script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
