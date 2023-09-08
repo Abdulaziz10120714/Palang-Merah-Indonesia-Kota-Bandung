@@ -195,3 +195,48 @@ body .navbar {
   /* Opsional: Anda juga bisa menambahkan transisi untuk efek perubahan ukuran yang lebih halus */
   transition: transform 0.3s ease;
 }
+
+/* Untuk perangkat dengan lebar layar <= 768px */
+@media (max-width: 768px) {
+  .pmi {
+    flex: 1;
+    order: 1;
+  }
+
+  .pmi h1 {
+    font-size: 24px; /* Ubah sesuai kebutuhan Anda */
+    margin-right: 10%;
+  }
+
+  .maps {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 768px) {
+  .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    display: none; /* Menyembunyikan elemen dengan class "pmi" */
+  }
+
+  .foto-bawah {
+    margin-top: 3%;
+  }
+}
+
+/* Tambahkan CSS ini di dalam media query yang sesuai */
+@media (max-width: 768px) {
+  .met {
+    display: flex; /* Mengatur elemen-elemen di dalam row menjadi flex container */
+    flex-wrap: wrap; /* Memungkinkan elemen-elemen untuk memecah ke baris baru jika perlu */
+    justify-content: space-between; /* Mengatur jarak antara elemen-elemen agar terdistribusi secara merata */
+    margin-top: 30px;
+  }
+
+  .met > div {
+    flex: 1; /* Membagi ruang secara merata di antara elemen-elemen */
+    margin: autopx; /* Menambahkan jarak antara elemen-elemen */
+  }
+}

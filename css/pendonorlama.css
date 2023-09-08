@@ -95,4 +95,17 @@ h6 {
     transform: translateY(-50%); /* Mengatur posisi vertikal */
     margin: 0; /* Menghapus margin */
   }
+
+  .tos {
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .dorlam {
+    margin-left: 4%;
+  }
+
+  .btn-masuk {
+    margin-left: -6%;
+  }
 }

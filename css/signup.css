@@ -83,4 +83,8 @@ h6 {
     transform: translateY(-50%); /* Mengatur posisi vertikal */
     margin: 0; /* Menghapus margin */
   }
+
+  .fut {
+    position: fixed;
+  }
 }
