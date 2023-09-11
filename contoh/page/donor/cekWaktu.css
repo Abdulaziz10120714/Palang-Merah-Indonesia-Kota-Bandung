@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 30px;
+}
+
+/* navbar end */
+
+/* isi */
+.cari {
+  margin-top: 100px;
+}
+.icon {
+  margin-left: -49px;
+}
+.form-control {
+}
+
+.cari .tombol {
+  background-color: #177e89;
+}
+
+/* isi end */
+
+/* informasi */
+
+.info {
+  background-color: #084c61;
+}
+
+.info .tanggal {
+  background-color: #177e89;
+  padding: 5px;
+}
+
+.info .alert-bisa span {
+  background-color: #ffc857;
+  border-radius: 5px;
+  color: #13b436;
+}
+
+.info .alert-tidak span {
+  background-color: #ffc857;
+  border-radius: 5px;
+  color: #ff0000;
+}
+
+/* informasi end */
+
+/* data */
+
+.cont-iden,
+.cont-riwayat {
+  position: relative;
+}
+
+.banner-iden,
+.banner-riwayat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #ffc857;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 30px;
+}
+.isi-inden,
+.isi-riwayat {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #084c61;
+  border-radius: 30px;
+  color: #ffc857;
+}
+
+.btn-mobile {
+  background-color: #177e89;
+  border: rgb(23, 126, 137) solid 1px;
+}
+
+/* data end */
+
+/* /* footer * */
+
+.footer {
+  background-color: #084c61;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.footer iframe {
+  width: 80%;
+  height: 300px;
+}
+
+.footer h1 {
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.footer i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copy {
+  background-color: #177e89;
+  padding: 10px 0;
+}
+
+.copy p {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.footer .alamat p,
+.telfon p,
+.instagram p,
+.facebook p {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* footer end */
+
+/* media quere */
+@media (max-width: 768px) {
+  .footer iframe {
+    height: 300px;
+  }
+
+  .footer .txtpmi {
+  }
+
+  .footer .alamat p {
+    padding: none;
+  }
+  .footer .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+
+  .pmi {
+    text-align: center;
+  }
+
+  .info .gambar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+}
