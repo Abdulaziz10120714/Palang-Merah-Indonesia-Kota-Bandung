@@ -6,7 +6,7 @@
     <title>PMI KOTA BANDUNG</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style/font.css" />
-    <link rel="stylesheet" href="../../css/mobileunit.css">
+    <link rel="stylesheet" href="../../css/registrasi.css">
   </head>
   <!-- navbar -->
   <body>
@@ -20,12 +20,315 @@
             height="40"
           />
         </a>
-        <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-log-out"></span> Log out
-          </button>
+        <button type="button" class="btn btn- btn-sm">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
       </div>
     </nav>
 
+    <section class="container ">
+    
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <div class="card mb-4 shadow-lg bg-white">
+            <div class="card-body">
+              
+        <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-sm-2">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            Nomor ID  
+          </font>
+        </font>
+        <span class="asteriskField">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              *
+            </font>
+          </font>
+        </span>
+        <select class="form-select" id="autoSizingSelect" >
+          <option selected>Pilih</option>
+          <option value="1">KTP</option>
+          <option value="2">SIM</option>
+          <option value="3">Pasport</option>
+        </select>
+      </div>
+      <div class="col-md-3 ms-1 mt-4">
+        <input type="text" class="form-control" placeholder="Masukkan Nomor ID" aria-label="Masukkan Nomor ID">
+      </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-md-5 ">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            Nama Lengkap 
+          </font>
+        </font>
+        <span class="asteriskField">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              *
+            </font>
+          </font>
+        </span>
+        <input type="text" class="form-control" placeholder="Masukkan Nama Lengkap" aria-label="Nama Lengkap">
+      </div>
+    </div>
+   
+      <div class="row mt-5 d-flex justify-content-center">
+        <div class="col-sm-2">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              Jenis Kelamin 
+            </font>
+          </font>
+          <span class="asteriskField">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">
+                *
+              </font>
+            </font>
+        <select class="form-select" id="autoSizingSelect">
+          <option selected>Pilih</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    
+    <div class="col-sm-3">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Golongan Darah 
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Pilih</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-md-5 ">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Tempat Lahir
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <input type="text" class="form-control" placeholder="Tempat Lahir" aria-label="Tempat Lahir">
+    </div>
+  </div>
+  <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-md-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Tanggal Lahir 
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <input type="text" class="form-control" placeholder="Tanggal Lahir" aria-label="Tanggal Lahir">
+    </div>
+  </div>
+  <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-sm-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Pekerjaan 
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Pilih</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          No Telp/HP 
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <input type="text" class="form-control" placeholder="Masukkan Nomor Telepon" aria-label="First name">
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="form-floating col-md-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Alamat Rumah
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <textarea class="form-control" placeholder="Masukan Alamat Lengkap" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-5 ">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          RT/RW
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <input type="text" class="form-control" placeholder="Masukkan RT/RW" aria-label="RT/RW">
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-sm-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Kota/Kabupaten
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Pilih</option>
+        <option value="1">BANDUNG</option>
+        <option value="2">Kab.Bandung Barat</option>
+        <option value="3">Kab.Bandung</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-sm-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Kelurahan
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Pilih</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-sm-5">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Kecamatan
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Pilih</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-5 ">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Kode Pos
+        </font>
+      </font>
+      <span class="asteriskField">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            *
+          </font>
+        </font>
+      </span>
+      <input type="text" class="form-control" placeholder="Kode Pos" aria-label="Kode Pos">
+    </div>
+  </div>
+    <div class="col mt-5 float-end">
+    <button class="btn btn-primary rounded-5" type="button" style="background: #177e89;">Simpan</button>
+    </div>
+  </div>
+</div>
+</div>
+          </div>
+ 
+      
+    
+    
+
+
+  </section>
+  
+  
 
 
 
@@ -58,13 +361,7 @@
 
 
 
-
-
-
-    <footer>
-        <div class="text-center text-white p-1" style="background-color:rgb(23, 126, 137)">
-          Copyright © 2023 UTD PMI Kota Bandung . All rights reserved.
-        </footer>
+    
           <script src="../../js/bootstrap.bundle.min.js"></script>
             </body>
       </html>

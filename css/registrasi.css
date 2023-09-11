@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* navbar */
+  body .navbar {
+    font-weight: 600;
+  }
+  .nav-item {
+    margin: auto 20px;
+  }
+.container {
+    padding: 100px;
+    margin: 100px;
+    margin-left:70px;
+    
+   
+} 
+.form-control {
+    border-color: #177E89;
+}
+.form-select{
+    border-color: #177E89;
+}
