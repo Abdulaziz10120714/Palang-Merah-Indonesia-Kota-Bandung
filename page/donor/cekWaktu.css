@@ -21,13 +21,24 @@ body .navbar {
   margin-top: 100px;
 }
 .icon {
-  margin-left: -49px;
+  margin-left: -48px;
 }
 .form-control {
 }
 
 .cari .tombol {
   background-color: #177e89;
+}
+::placeholder {
+  color: white !important;
+  opacity: 0.3 !important;
+}
+
+.cari input {
+  background-color: #084c61 !important;
+  border: none !important;
+  color: white;
+  font-size: 3vmin;
 }
 
 /* isi end */
@@ -59,6 +70,15 @@ body .navbar {
 
 /* data */
 
+.data hr {
+  margin-top: -3px;
+  color: white;
+}
+
+.isi-inden {
+  font-size: 3vmin;
+}
+
 .cont-iden,
 .cont-riwayat {
   position: relative;
@@ -71,7 +91,8 @@ body .navbar {
   left: 0;
   right: 0;
   position: absolute;
-  width: 100%;
+  width: 95%;
+  height: 50px;
   background-color: #ffc857;
   padding: 10px;
   z-index: 1;
@@ -80,7 +101,7 @@ body .navbar {
 .isi-inden,
 .isi-riwayat {
   position: relative;
-  height: 500px;
+  height: 360px;
   width: 100%;
   background-color: #084c61;
   border-radius: 30px;
