@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 20px;
+}
+
+@media (min-width: 500px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 500px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+/* Teks responsif */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px; /* Ukuran teks default */
+}
+
+/* Media query untuk ukuran layar yang lebih kecil */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px; /* Ukuran teks untuk layar kecil */
+  }
+}
+
+/* Gaya teks judul responsif */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+/* Media query untuk ukuran layar yang lebih kecil pada judul */
+@media (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem; /* Ukuran judul untuk layar kecil */
+  }
+}
+
+.top-left {
+  position: relatif;
+  buttom: 60%;
+  right: 86.3%;
+  width: 150px; /* Lebar rectangle */
+  height: 40px; /* Tinggi rectangle */
+  background-color: shite; /* Warna background rectangle */
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+  border-radius: 0px 35px 0px 0px;
+  font-weight: bold;
+  text-align: center; /* Mengatur teks di tengah secara horizontal */
+  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
+  align-items: center; /* Mengatur teks di tengah secara vertikal */
+  justify-content: center; /* Mengatur teks di tengah secara horizontal */
+}
+
+.pertama {
+  max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
+  margin: 0 auto; /* Menengahkan elemen dalam kontainer */
+  border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
+}
+
+.card-header {
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+}
+
+.form-check-inline {
+  max-width: 200px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
+  width: 100%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  height: 50px; /* Mengatur tinggi elemen */
+  background-color: #177e89;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.form-check-input {
+  position: relative; /* Menggunakan posisi relatif */
+  bottom: -12px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
+  left: 10px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+}
+
+.form-check-input:checked {
+  background-color: #666666; /* Ganti dengan warna yang Anda inginkan saat diklik */
+  color: black; /* Ganti dengan warna teks yang Anda inginkan saat diklik */
+}
+
+.form-check-label {
+  position: relative; /* Menggunakan posisi relatif */
+  bottom: -13px; /* Mengatur posisi vertikal ke atas sejauh 5px */
+  right: 5px; /* Mengatur posisi horizontal ke kiri sejauh 5px */
+}
+
+.btn {
+  position: relative; /* Menggunakan posisi relatif */
+  background-color: #177e89;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: -3%; /* Sesuaikan margin yang Anda inginkan */
+  margin-right: 0%;
+  width: 15%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  height: 30px; /* Mengatur tinggi elemen */
+}
+
+.btn-text {
+  display: block;
+  font-size: 15px;
+  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-top: 10px; /* Sesuaikan margin sesuai kebutuhan */
+  }
+
+  .btn-text {
+    font-size: 12px; /* Mengurangi ukuran font untuk teks pada layar kecil */
+    margin-top: 0%; /* Sesuaikan margin sesuai kebutuhan */
+  }
+}
+
+/* data */
+
+.cont-iden,
+.cont-riwayat {
+  position: relative;
+}
+
+.banner-iden,
+.banner-riwayat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #084c61;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 30px;
+}
+.isi-inden,
+.isi-riwayat {
+  position: relative;
+  height: 650px;
+  width: 150%;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #ffc857;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -25%;
+}
+
+.banner-iden {
+  margin-top: 15px;
+  width: 50%;
+  margin-right: 50%;
+}
+
+.btn-mobile {
+  background-color: #177e89;
+  border: rgb(23, 126, 137) solid 1px;
+}
+
+.row.row-xl-2 {
+  position: relative;
+  margin-left: 25%;
+  width: 100%;
+}
+
+/* data end */
+
+.small {
+  margin-top: 5%;
+  width: auto;
+  color: black;
+}
+
+p.mb-0 {
+  color: #fff; /* Ganti dengan kode warna */
+}
+
+@media screen and (max-width: 768px) {
+  .small {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .row.row-xl-2 {
+    margin-left: 0;
+  }
+
+  .isi-inden,
+  .isi-riwayat {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #ffc857;
+    margin-left: 0%;
+  }
+
+  .pertama {
+    max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
+    margin: 0 auto; /* Menengahkan elemen dalam kontainer */
+    border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
+  }
+
+  .form-check-inline {
+    max-width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 40px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+  }
+
+  .btn {
+    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+    bottom: 40%;
+  }
+
+  .cont-iden {
+    position: relative;
+    width: 130%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: -15%;
+  }
+
+  .pertama {
+    margin-top: 10;
+  }
+
+  .lanjut-btn {
+    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+    bottom: 40%;
+  }
+
+  .banner-iden {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .lanjut-btn {
+    max-width: 90%;
+  }
+
+  .top-left-group {
+    margin-top: 15%;
+  }
+}
+
+.lanjut-btn {
+  width: 35%;
+}
