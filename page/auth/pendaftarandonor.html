@@ -192,7 +192,7 @@
                         <p class="mb-0">KOLOM DONOR PENGGANTI</p>
                       </div>
                     <div class="cont-iden container">
-                      <div class="isi-inden container p-3 pt-5">
+                      <div class="isi-inden-awal container p-3 pt-5">
                         <div class="small fw-semibold" style=" margin-right: 85%;">Nama Pasien</div>
                         <div class="input-group mt-2">
                           <input
@@ -262,109 +262,678 @@
         </div>
         <!-- END PILIH JENIS DONOR PENGGANTI -->
 
-                  <!-- PILIH JENIS DONOR KELUARGA -->
-                  <div class="top-left-group">
-                    <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
-                     <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
-                      <div class="card-header">
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                          <label class="form-check-label" for="inlineRadio1">SUKARELA</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                          <label class="form-check-label" for="inlineRadio2">PENGGANTI</label>
-                        </div>
-                        <br>
-                        <div class="form-check form-check-inline">
-                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                         <label class="form-check-label" for="inlineRadio1">APHERESIS</label>
-                       </div>
-                       <div class="form-check form-check-inline">
-                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                         <label class="form-check-label" for="inlineRadio2">KELUARGA</label>
-                       </div>
-                       
-                       <div class="data container my-3 mt-1">
-                        <div class="row row-sm-1 row-xl-2">
-                          <div class="identitas col-md-6 mt-5">
-                            <div
-                            class="banner-iden container text-center"
-                            style="font-size: 4vmin"
-                          >
-                            <p class="mb-0">KOLOM DONOR KELUARGA</p>
-                          </div>
-                            <div class="cont-iden container">
-                              <div class="isi-inden container p-3 pt-5">
-                                <div class="small fw-semibold" style=" margin-right: 85%;">Nama Pasien</div>
-                                <div class="input-group mt-2">
-                                  <input
-                                    class="form-control border rounded-pill text-black"
-                                    type="search"
-                                    placeholder="Masukan Nama Anda"
-                                    style="font-size: 2vmin"
-                                    id="example-search-input"
-                                  />
-                            </div>
-                            <div class="small fw-semibold" style=" margin-right: 85%;">Rumah Sakit</div>
-                            <div class="input-group mt-2">
-                              <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
-                                <option selected>Pilih Rumah Sakit</option>
-                                <option value="rumahsakit1">Rumah Sakit 1</option>
-                                <option value="rumahsakit2">Rumah Sakit 2</option>
-                                <option value="rumahsakit3">Rumah Sakit 3</option>
-                              </select>
-                            </div>
-                            <div class="small fw-semibold" style=" margin-right: 82%;">Nomor Register</div>
-                                <div class="input-group mt-2">
-                                  <input
-                                    class="form-control border rounded-pill text-black"
-                                    type="search"
-                                    placeholder="Masukan Nomor Register Anda"
-                                    style="font-size: 2vmin"
-                                    id="example-search-input"
-                                  />
-                            </div>
-                            <div class="small fw-semibold" style=" margin-right: 80%;">Komponen Darah</div>
-                            <div class="input-group mt-2">
-                              <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
-                                <option selected>Pilih Komponen Darah</option>
-                                <option value="rumahsakit1">Komponen Darah</option>
-                                <option value="rumahsakit2">Komponen Darah</option>
-                                <option value="rumahsakit3">Komponen Darah</option>
-                              </select>
-                            </div>
-                            <div class="small fw-semibold" style=" margin-right: 80%;">Golongan Darah</div>
-                            <div class="input-group mt-2">
-                              <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
-                                <option selected>Pilih Golongan Darah</option>
-                                <option value="rumahsakit1">Golongan Darah</option>
-                                <option value="rumahsakit2">Golongan Darah</option>
-                                <option value="rumahsakit3">Golongan Darah</option>
-                              </select>
-                            </div>
-                            <div class="small fw-semibold" style=" margin-right: 90%;">Rhesus</div>
-                            <div class="input-group mt-2">
-                              <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
-                                <option selected>Pilih Rhesus</option>
-                                <option value="rumahsakit1">Rhesus</option>
-                                <option value="rumahsakit2">Rhesus</option>
-                                <option value="rumahsakit3">Rhesus</option>
-                              </select>
-                            </div>
-                          </div>
-                          <br>
-                          <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2 mb-3">
-                            <span class="btn-text">SELANJUTNYA</span></a>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-              </div>
-                <!-- END PILIH JENIS DONOR KELUARGA -->
+<!-- PILIH JENIS DONOR KELUARGA -->
+<div class="top-left-group">
+  <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
+   <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
+    <div class="card-header">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">SUKARELA</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">PENGGANTI</label>
+      </div>
+      <br>
+      <div class="form-check form-check-inline">
+       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+       <label class="form-check-label" for="inlineRadio1">APHERESIS</label>
+     </div>
+     <div class="form-check form-check-inline">
+       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+       <label class="form-check-label" for="inlineRadio2">KELUARGA</label>
+     </div>
+     
+     <div class="data container my-3 mt-1">
+      <div class="row row-sm-1 row-xl-2">
+        <div class="identitas col-md-6 mt-5">
+          <div
+              class="banner-iden container text-center"
+              style="font-size: 4vmin"
+            >
+              <p class="mb-0">KOLOM DONOR KELUARGA</p>
+            </div>
+          <div class="cont-iden container">
+            <div class="isi-inden-awal container p-3 pt-5">
+              <div class="small fw-semibold" style=" margin-right: 85%;">Nama Pasien</div>
+              <div class="input-group mt-2">
+                <input
+                  class="form-control border rounded-pill text-black"
+                  type="search"
+                  placeholder="Masukan Nama Anda"
+                  style="font-size: 2vmin"
+                  id="example-search-input"
+                />
+          </div>
+          <div class="small fw-semibold" style=" margin-right: 85%;">Rumah Sakit</div>
+          <div class="input-group mt-2">
+            <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
+              <option selected>Pilih Rumah Sakit</option>
+              <option value="rumahsakit1">Rumah Sakit 1</option>
+              <option value="rumahsakit2">Rumah Sakit 2</option>
+              <option value="rumahsakit3">Rumah Sakit 3</option>
+            </select>
+          </div>
+          <div class="small fw-semibold" style=" margin-right: 82%;">Nomor Register</div>
+              <div class="input-group mt-2">
+                <input
+                  class="form-control border rounded-pill text-black"
+                  type="search"
+                  placeholder="Masukan Nomor Register Anda"
+                  style="font-size: 2vmin"
+                  id="example-search-input"
+                />
+          </div>
+          <div class="small fw-semibold" style=" margin-right: 80%;">Komponen Darah</div>
+          <div class="input-group mt-2">
+            <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
+              <option selected>Pilih Komponen Darah</option>
+              <option value="rumahsakit1">Komponen Darah</option>
+              <option value="rumahsakit2">Komponen Darah</option>
+              <option value="rumahsakit3">Komponen Darah</option>
+            </select>
+          </div>
+          <div class="small fw-semibold" style=" margin-right: 80%;">Golongan Darah</div>
+          <div class="input-group mt-2">
+            <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
+              <option selected>Pilih Golongan Darah</option>
+              <option value="rumahsakit1">Golongan Darah</option>
+              <option value="rumahsakit2">Golongan Darah</option>
+              <option value="rumahsakit3">Golongan Darah</option>
+            </select>
+          </div>
+          <div class="small fw-semibold" style=" margin-right: 90%;">Rhesus</div>
+          <div class="input-group mt-2">
+            <select class="form-select border rounded-pill text-black" style="font-size: 2vmin" id="example-select-input">
+              <option selected>Pilih Rhesus</option>
+              <option value="rumahsakit1">Rhesus</option>
+              <option value="rumahsakit2">Rhesus</option>
+              <option value="rumahsakit3">Rhesus</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2">
+          <span class="btn-text">SELANJUTNYA</span></a>
+          </div>
+        </div>
+      </div>
+  </div>
+ </div>
+</div>
+</div>
+<!-- PILIH JENIS DONOR KELUARGA -->
    
+<!-- PERTANYAAN 1 -->
+<div class="top-left-group">
+  <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
+    <div class="input-group">
+   <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
+   <div class="top-left-2" style="color: white; font-size: 15px; background-color: #177E89;">Pertanyaan 1</div>
+  </div>
+    <div class="card-header">   
+     <div class="data container my-3 mt-1">
+      <div class="row row-sm-1 row-xl-2">
+        <div class="identitas col-md-6 mt-5">
+          <div
+              class="banner-iden container text-center"
+              style="font-size: 4vmin"
+            >
+              <p class="mb-0">PERTANYAAN #1</p>
+            </div>
+          <div class="cont-iden container">
+            <div class="isi-inden container p-3 pt-5">
+                    <table class="text-start">
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">APAKAH ANDA HARI INI :</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">1. Sehat Pada Hari ini
+                          <div class="button-per1">
+                          <input type="radio" name="sehat" id="iya" value="Iya">
+                          <label for="iya">Iya</label>
+                          <input type="radio" name="sehat" id="tidak" value="Tidak">
+                          <label for="tidak">Tidak</label>
+                        </div>
+                        </td>                        
+                      </tr>
+                      <tr>
+                        <td>2. Sedang Minum Antibiotik
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">3. Sedang Minum Obat lain untuk infeksi
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam Waktu 48 Jam Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">4. Apakah anda sedang minum aspirin atau obat yang mengandung aspirin?
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam Waktu 1 Minggu Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td>5. Mengalami sakit kepala dan demam secara bersamaan
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam Waktu 6 Minggu Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">6. Untuk donor darah wanita : apakah saat ini sedang hamil Jika ya, Kehamilan keberapa ?
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam Waktu 8 Minggu Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td>7. Mendonorkan Darah
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">8. Menerima Vaksinasi atau suntikan lainnya
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>9.Pernah kontak dengan orang yang menerima vaksin smallpox
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam Waktu 10 Minggu Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td>10. Pernah menyumbangkan 2 kantong sel darah melalui proses apheresis
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+        </div>
+        <br>
+        <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2">
+          <span class="btn-text">SELANJUTNYA</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<!-- END PERTANYAAN 1 -->
+
+<!-- PERTANYAAN 2 -->
+<div class="top-left-group">
+  <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
+    <div class="input-group">
+   <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
+   <div class="top-left-2" style="color: black; font-size: 15px;">Pertanyaan 1</div>
+   <div class="top-left-2" style="color: white; font-size: 15px; background-color: #177E89;">Pertanyaan 2</div>
+  </div>
+    <div class="card-header">   
+     <div class="data container my-3 mt-1">
+      <div class="row row-sm-1 row-xl-2">
+        <div class="identitas col-md-6 mt-5">
+          <div
+              class="banner-iden container text-center"
+              style="font-size: 4vmin"
+            >
+              <p class="mb-0">PERTANYAAN #2</p>
+            </div>
+          <div class="cont-iden container">
+            <div class="isi-inden-2 container p-3 pt-5">
+                    <table class="text-start">
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam 12 Minggu Terakhir</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">11. Pernah Menerima Transfusi Darah
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>12. Pernah Mendapat Transplantasi Organ Jaringan atau  Sumsum Tulang
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">13. Pernah Cangkok Tulang Untuk Kulit
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>14. Pernah Tertusuk Jarum Medis
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">15. Pernah Berhubungan Seksual Dengan Orang Penderita HIV/AIDS
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>16. Pernah Berhubungan Dengan Pekerja Seks Komersial
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">17. Pernah Berhubungan Dengan Pengguna Narkoba Jarum Suntik
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>18. Pernah Berhubungan Dengan Pengguna Konsentrat Factor Pembeku
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">19. Donor Wanita : Pernah Berhubungan Dengan Laki-laki Biseksual
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>20. Pernah Berhubungan Seksual Dengan Penderita Hepatitis
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">21. Tinggal Dengan Penderita Hepatitis
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>22. Memiliki Tato</td>
+                      </tr>
+                      <tr>
+                        <td  style="background-color: #DBDBDB;">23. Memiliki Tindik Telinga  atau Bagian Tubuh Lainnya
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>24. Sedang atau Pernah Mendapatkan Pengobatan Sifilis atau GO (Kencing Bernanah)
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td  style="background-color: #DBDBDB;">25. Pernah ditahan dipenjara  Untuk Waktu Lebih Dari  72 Jam
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Dalam 3 Tahun</td>
+                      </tr>
+                      <tr>
+                        <td>26. Pernah Berada diluar Indonesia
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+        </div>
+        <br>
+        <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2">
+          <span class="btn-text">SELANJUTNYA</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<!-- END PERTANYAAN 2 -->
+
+<!-- PERTANYAAN 3 -->
+<div class="top-left-group">
+  <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
+    <div class="input-group">
+   <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
+   <div class="top-left-2" style="color: black; font-size: 15px;">Pertanyaan 1</div>
+   <div class="top-left-2"  style="color: black; font-size: 15px;">Pertanyaan 2</div>
+   <div class="top-left-2" style="color: white; font-size: 15px; background-color: #177E89;">Pertanyaan 3</div>
+  </div>
+    <div class="card-header">   
+     <div class="data container my-3 mt-1">
+      <div class="row row-sm-1 row-xl-2">
+        <div class="identitas col-md-6 mt-5">
+          <div
+              class="banner-iden container text-center"
+              style="font-size: 4vmin"
+            >
+              <p class="mb-0">PERTANYAAN #3</p>
+            </div>
+          <div class="cont-iden container">
+            <div class="isi-inden-3 container p-3 pt-5">
+                    <table class="text-start">
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Tahun 1997 Hingga Sekarang</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">27. Menerima uang, obat atau pembayaran lainnya untuk seks
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>28. Laki laki : Pernah berhubungan seksual dengan laki-laki
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Tahun 1980 Hingga Sekarang</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">29. Tinggal selama 5 Tahun atau lebih di eropa
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>30. Menerima Transfusi darah di Inggris</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Tahun 1980 Hingga 1996</td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">31. Tinggal selama 3 bulan atau lebih di Inggris
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #177E89; color: white;">Apakah Anda</td>
+                      </tr>
+                      <tr>
+                        <td>32. Mendapat hasil Positif untuk HIV/AIDS
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">33. Menggunakan jarum suntik untuk obat-obatan, Steroid yang tidak diresepkan dokter
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>34. Menggunakan konsentrat faktor pembeku
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">35. Menderita Hepatitis
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>36. Menderita Malaria
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td  style="background-color: #DBDBDB;">37. Menderita kanker termasuk leukemia
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>38. Bermasalah dengan jantung dan paru-paru
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">39. Menderita pendarahan atau penyakit berhubungan dengan darah
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>40. Berhubungan seksual dengan orang yang tertinggal di Afrika
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color: #DBDBDB;">41. Tinggal di Afrika
+                          <div class="button-per1">
+                            <input type="radio" name="sehat" id="iya" value="Iya">
+                            <label for="iya">Iya</label>
+                            <input type="radio" name="sehat" id="tidak" value="Tidak">
+                            <label for="tidak">Tidak</label>
+                          </div></td>
+                      </tr>
+                    </table>
+        </div>
+        <br>
+        <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2">
+          <span class="btn-text">SELANJUTNYA</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<!-- END PERTANYAAN 3 -->
+
+<!-- KONFIRMASI -->
+<div class="top-left-group">
+  <div class="pertama card text-center" style="margin-top: 5%; border-radius: 0%;">
+    <div class="input-group">
+   <div class="top-left" style="color: black; font-size: 15px;">Pilih Jenis Donor</div>
+   <div class="top-left-2" style="color: black; font-size: 15px;">Pertanyaan 1</div>
+   <div class="top-left-2"  style="color: black; font-size: 15px;">Pertanyaan 2</div>
+   <div class="top-left-2" style="color: black; font-size: 15px;">Pertanyaan 3</div>
+   <div class="top-left-2" style="color: white; font-size: 15px; background-color: #177E89;">Konfirmasi</div>
+  </div>
+    <div class="card-header">   
+     <div class="data container my-3 mt-1">
+      <div class="row row-sm-1 row-xl-2">
+        <div class="identitas col-md-6 mt-5">
+          <div
+              class="banner-iden container text-center"
+              style="font-size: 4vmin"
+            >
+              <p class="mb-0">INFORMED CONSENT DONOR</p>
+            </div>
+          <div class="cont-iden container">
+            <div class="isi-inden-4 container p-3 pt-5">
+              <div class="text-start" style="color: black; margin-top: 8%;">
+              <p>Yth. PMI Kota Bandung<p>
+              <p>Saya telah membaca dan mendapatkan semua informasi yang diberikan serta menjawab dengan jujur.</p>
+              <p>Saya mengerti dan bersedia menyumbangkan darah sesuai dengan standar yang berlakukan dan setuju diambil contoh darah untuk keperluan pemeriksaan laboratorium berupa uji golongan darah, HIV, Hepatitis C, Sifilis dan infeksi lainnya.</p>
+              <p>Bila ternyata hasil laboratorium perlu ditindaklanjuti, maka saya setuju untuk diberi kabar dan darah saya tidak di transfusikan kepala calon pasien.</p>
+              <p>
+                Jika komponen plasma tidak terpakai untuk transfusi, saya setuju dapat dijadikan produk plasma untuk pengobatan.</p>
+              </div>
+        </div>
+        <br>
+        <a href="#" class="lanjut-btn btn btn-block fa-lg gradient-custom-2" style="background-color: #B41212;">
+          <span class="btn-text">Kembali</span></a>
+          <a href="#" class="lanjut-btn-2 btn btn-block fa-lg gradient-custom-2" style="background-color: #12B436;">
+            <span class="btn-text">Saya Setuju & Simpan Data</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<!-- END KONFIRMASI -->
 
    
   

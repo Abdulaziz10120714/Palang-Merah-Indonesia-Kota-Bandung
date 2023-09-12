@@ -79,6 +79,22 @@ h6 {
   justify-content: center; /* Mengatur teks di tengah secara horizontal */
 }
 
+.top-left-2 {
+  position: relatif;
+  buttom: 60%;
+  right: 86.3%;
+  width: 150px; /* Lebar rectangle */
+  height: 40px; /* Tinggi rectangle */
+  background-color: shite; /* Warna background rectangle */
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+  border-radius: 0px 35px 0px 0px;
+  font-weight: bold;
+  text-align: center; /* Mengatur teks di tengah secara horizontal */
+  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
+  align-items: center; /* Mengatur teks di tengah secara vertikal */
+  justify-content: center; /* Mengatur teks di tengah secara horizontal */
+}
+
 .pertama {
   max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
   margin: 0 auto; /* Menengahkan elemen dalam kontainer */
@@ -90,9 +106,9 @@ h6 {
 }
 
 .form-check-inline {
-  max-width: 200px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
-  width: 100%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
-  height: 50px; /* Mengatur tinggi elemen */
+  max-width: 250px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
+  width: 200%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  height: 70px; /* Mengatur tinggi elemen */
   background-color: #177e89;
   color: white;
   margin-top: 10px;
@@ -104,9 +120,10 @@ h6 {
 
 .form-check-input {
   position: relative; /* Menggunakan posisi relatif */
-  bottom: -12px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
-  left: 10px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
+  bottom: -21.5px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
+  left: 40px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
   border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+  font-size: 20px;
 }
 
 .form-check-input:checked {
@@ -116,8 +133,9 @@ h6 {
 
 .form-check-label {
   position: relative; /* Menggunakan posisi relatif */
-  bottom: -13px; /* Mengatur posisi vertikal ke atas sejauh 5px */
+  bottom: -21.5px; /* Mengatur posisi vertikal ke atas sejauh 5px */
   right: 5px; /* Mengatur posisi horizontal ke kiri sejauh 5px */
+  font-size: 20px;
 }
 
 .btn {
@@ -127,7 +145,7 @@ h6 {
   border-radius: 20px;
   margin-top: -3%; /* Sesuaikan margin yang Anda inginkan */
   margin-right: 0%;
-  width: 15%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  width: 20%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
   height: 30px; /* Mengatur tinggi elemen */
 }
 
@@ -135,6 +153,13 @@ h6 {
   display: block;
   font-size: 15px;
   margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.btn-text-kembali {
+  display: block;
+  font-size: 15px;
+  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
+  background-color: #b41212;
 }
 
 @media screen and (max-width: 768px) {
@@ -172,13 +197,57 @@ h6 {
 .isi-inden,
 .isi-riwayat {
   position: relative;
-  height: 650px;
-  width: 150%;
+  height: 700px;
+  width: 200%;
   background-color: #fff;
   border-radius: 30px;
   color: #ffc857;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -25%;
+  margin-left: -50%;
+}
+
+.isi-inden-2 {
+  position: relative;
+  height: 780px;
+  width: 200%;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #ffc857;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -50%;
+}
+
+.isi-inden-3 {
+  position: relative;
+  height: 810px;
+  width: 200%;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #ffc857;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -50%;
+}
+
+.isi-inden-4 {
+  position: relative;
+  height: 600px;
+  width: 200%;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #ffc857;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -50%;
+}
+
+.isi-inden-awal {
+  position: relative;
+  height: 600px;
+  width: 200%;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #ffc857;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-left: -50%;
 }
 
 .banner-iden {
@@ -201,7 +270,7 @@ h6 {
 /* data end */
 
 .small {
-  margin-top: 5%;
+  margin-top: 2%;
   width: auto;
   color: black;
 }
@@ -285,4 +354,31 @@ p.mb-0 {
 
 .lanjut-btn {
   width: 35%;
+}
+
+.lanjut-btn-2 {
+  width: 60%;
+}
+
+thead {
+  top: 0;
+  position: sticky;
+}
+
+table {
+  border-collapse: collapse;
+  position: relative;
+  margin: auto;
+  color: #444;
+}
+
+table td {
+  border: 1px solid #f5f5f5;
+  padding: 7px 17px;
+  border-color: black;
+  width: 10%;
+}
+
+.button-per1 {
+  float: right;
 }
