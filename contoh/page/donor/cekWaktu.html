@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PMI KOTA BANDUNG</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
     <link rel="stylesheet" href="./cekWaktu.css" />
-    <link rel="stylesheet" href="../../style/font.css" />
+    <link rel="stylesheet" href="../../../style/font.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <!-- navbar -->
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg box shadow fixed-top bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">
-          <img src="../../img/logo.png" alt="" width="100%" height="40" />
+          <img src="../../../img/logo.png" alt="" width="100%" height="40" />
         </a>
         <button
           class="navbar-toggler"
@@ -129,11 +129,11 @@
     <div class="cari container-fluid ">
       <div class="container">
         <div class="row d-flex justify-content-start">
-          <div class="col-md-8 col-sm-6">
+          <div class="col-md-5">
             <div class="small fw-semibold mt-2">Cari Waktu Donor Anda!</div>
             <div class="input-group mt-2">
               <input
-                class="form-cari form-control border rounded-pill text-white"
+                class="form-control border rounded-pill text-black"
                 type="search"
                 placeholder="Silahkan Masukan ID Donor Anda"
                 style="font-size: 2vmin"
@@ -141,7 +141,7 @@
               />
               <span class="input-group-append">
                 <button
-                  class="icon btn btn-outline-secondar border rounded-pill text-white"
+                  class="icon btn btn-outline-secondar border rounded-pill text-black"
                   disabled
                 >
                   <i data-feather="search"></i>
@@ -167,9 +167,9 @@
               <p class="mb-0">Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
             </div>
             <div class="username mt-4">
-              <p class="fw-bold text-white" style="font-size: 6vmin">
-                Hari Yang Cerah,<span id="namaSpan"> </span> <br/>
-                <span class="fw-normal" style="font-size: 3vmin">Semoga Harimu Menyenangkan!</span>
+              <p class="fw-bold text-white" style="font-size: 4vmin">
+                Hari Yang Cerah,<span id="namaSpan"> </span> <br />
+                <span class="fw-normal" style="font-size: 2vmin">Semoga Harimu Menyenangkan!</span>
               </p>
             </div>
             <div
@@ -184,8 +184,8 @@
           </div>
           <div class="gambar col d-flex justify-content-center img-fluid">
             <img
-              src="../../img/cekWaktu/doctor.png"
-              alt="gambar doctor"
+              src="https://source.unsplash.com/random/200x200/?task&4"
+              alt=""
             />
           </div>
         </div>
@@ -193,80 +193,27 @@
 
       <div class="data container my-3">
         <div class="row row-sm-1 row-xl-2">
-          <div class="identitas col-md-6 mt-5" style="display: none;">
+          <div class="identitas col-md-6 mt-5 "style="display: none;" >
             <div class="cont-iden container">
               <div
                 class="banner-iden container text-center"
-                style="font-size: 4vmin"
-              >
-                <p class="mb-0 fw-bold">IDENTITAS DONOR</p>
+                style="font-size: 4vmin">
+                <p class="mb-0">IDENTITAS DONOR</p>
               </div>
-              <div class="isi-inden container p-3 pt-5" >
-                <div class="row mt-4">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">ID DONOR</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="idDonor"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-  
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">NAMA</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="namaUser"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
+              <div class="isi-inden container p-3 pt-5">
+                <div><div class="small fw-semibold mt-4">ID DONOR</div>
+                <input id="idDonor" type="text"class="form-control mt-1"placeholder=""disabled/></div>
 
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">GOLONGAN DARAH</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="golDarah"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-  
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">
-                      Tgl. Kembali Donor Reguler
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="kembaliDonor"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
+                <div><div class="small fw-semibold mt-2">NAMA</div>
+                <input id="namaUser" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
+
+                <div><div class="small fw-semibold mt-2">GOLONGAN DARAH</div>
+                <input id="golDarah" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
+                
+                 <div><div class="small fw-semibold mt-2">Tgl. Kembali Donor Reguler</div>
+                <input id="kembaliDonor" type="text" class="form-control mt-1" placeholder="" disabled/></div>
               </div>
             </div>
           </div>
@@ -276,107 +223,41 @@
               <div
                 class="banner-riwayat container text-center"
                 style="font-size: 4vmin">
-                <p class="mb-0 fw-bold">RIWAYAT DONOR TERAKHIR</p>
+                <p class="mb-0">RIWAYAT DONOR TERAKHIR</p>
               </div>
-          
+
               
               <div class="isi-riwayat container p-3 pt-5">
-          
-                <div class="row mt-4">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">Tanggal</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="terakhirDonor"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-          
-                <div class="row mt-2">
-                  <div class="col-md-6 ">
-                    <div class="small fw-semibold mt-2">Tempat Kegiatan</div>
-                  </div>
-                  <div class="col-md-6 ">
-                    <input
-                      id="tkp"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-          
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">Pemeriksaan Medis</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="PM"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-          
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">Pemeriksaan HB</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="PHB"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-          
-                <div class="row mt-2">
-                  <div class="col-md-8 col-sm-6">
-                    <div class="small fw-semibold mt-2">Pengambilan Darah</div>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input
-                      id="pengambilanDarah"
-                      type="text"
-                      class="form-control text-end"
-                      placeholder=""
-                      disabled
-                    />
-                  </div>
-                </div>
-                <hr />
-          
+
+                 <div><div class="small fw-semibold mt-4">Tanggal</div>
+                <input id="terakhirDonor" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
+                <div><div class="small fw-semibold mt-2">Tempat Kegiatan</div>
+                <input id="tkp" type="text" class="form-control mt-1" placeholder="" disabled /></div>
+
+
+                <div><div class="small fw-semibold mt-2">Pemeriksaan Medis</div>
+                <input id="PM" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
+
+                <div><div class="small fw-semibold mt-2">Pemeriksaan HB</div>
+                <input id="PHB" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
+
+                 <div><div class="small fw-semibold mt-2">Pengambilan Darah</div>
+                <input id="pengambilanDarah" type="text" class="form-control mt-1" placeholder="" disabled/></div>
+
               </div>
             </div>
           </div>
-
-
+        </div>
+      </div>
         <div class="d-flex justify-content-center my-5">
         <button id="btnLihatMobileUnit" class=" btn-mobile btn btn-primary rounded-pill" type="button " src="../MobileUnit/mobileunit.html" style="display: none;">Cek Jadwal Mobile Unit</button>
         </div>
       </div>
     </div>
 
-        </div>
-      </div>
-
-         
     <!-- cari end -->
 
         <!-- Footer section -->
@@ -442,7 +323,10 @@
     var golDarah = document.getElementById('golDarah');
     var kembaliDonor = document.getElementById('kembaliDonor');
 
-    idDonor.value = '1234';
+    var id_cari = document.getElementById('id-donor').value;
+
+    // idDonor.value = '1234';
+    idDonor.value = id_cari;
     namaUser.value = nama;
     golDarah.value = 'B';
     
@@ -451,7 +335,7 @@
     var tahun = tglKembaliDonor.getFullYear();
     var bulan = String(tglKembaliDonor.getMonth() + 1).padStart(2, '0');
     var tanggal = String(tglKembaliDonor.getDate()).padStart(2, '0');
-    kembaliDonor.value = tahun + '/' + bulan + '/' + tanggal;
+    kembaliDonor.value = tahun + '-' + bulan + '-' + tanggal;
 
     var terakhirDonor = document.getElementById('terakhirDonor');
     var tkp = document.getElementById('tkp');
@@ -464,7 +348,7 @@
     var tahunTerakhir = tglDonorTerakhir.getFullYear();
     var bulanTerakhir = String(tglDonorTerakhir.getMonth()).padStart(2, '0');
     var tanggalTerakhir = String(tglDonorTerakhir.getDate()).padStart(2, '0');
-    terakhirDonor.value = tahunTerakhir + '/' + bulanTerakhir + '/' + tanggalTerakhir;
+    terakhirDonor.value = tahunTerakhir + '-' + bulanTerakhir + '-' + tanggalTerakhir;
 
     tkp.value = 'PMI KOTA BANDUNG';
     PM.value = 'Lolos';

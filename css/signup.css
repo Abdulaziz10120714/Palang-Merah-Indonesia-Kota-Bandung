@@ -67,6 +67,9 @@ h6 {
   img {
     display: none; /* Menghilangkan gambar */
   }
+  img.logo {
+    display: block; /* Menampilkan gambar */
+  }
 }
 
 .coba {
@@ -82,5 +85,9 @@ h6 {
     top: 50%; /* Mengatur posisi vertikal di tengah atas */
     transform: translateY(-50%); /* Mengatur posisi vertikal */
     margin: 0; /* Menghapus margin */
+  }
+
+  .fut {
+    position: fixed;
   }
 }

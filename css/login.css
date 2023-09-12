@@ -14,12 +14,12 @@ body .navbar {
   margin: auto 20px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 767px) {
   .gradient-form {
     height: 100vh !important;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 767px) {
   .gradient-custom-2 {
     border-top-right-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
@@ -78,6 +78,9 @@ h6 {
 @media (max-width: 950px) {
   img {
     display: none; /* Menghilangkan gambar */
+  }
+  img.logo {
+    display: block; /* Menampilkan gambar */
   }
 }
 
