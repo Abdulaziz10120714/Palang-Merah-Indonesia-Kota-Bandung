@@ -3,7 +3,9 @@
   margin: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* navbar */
@@ -13,166 +15,13 @@ body .navbar {
 .nav-item {
   margin: auto 20px;
 }
+/* navbar end */
 
-@media (min-width: 500px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
+/* tab */
+.cont-tab {
+  margin-top: 100px;
 }
-@media (min-width: 500px) {
-  .gradient-custom-2 {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
-}
-
-/* Teks responsif */
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 16px; /* Ukuran teks default */
-}
-
-/* Media query untuk ukuran layar yang lebih kecil */
-@media (max-width: 767px) {
-  body {
-    font-size: 14px; /* Ukuran teks untuk layar kecil */
-  }
-}
-
-/* Gaya teks judul responsif */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-/* Media query untuk ukuran layar yang lebih kecil pada judul */
-@media (max-width: 767px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.5rem; /* Ukuran judul untuk layar kecil */
-  }
-}
-
-.top-left {
-  position: relatif;
-  buttom: 60%;
-  right: 86.3%;
-  width: 150px; /* Lebar rectangle */
-  height: 40px; /* Tinggi rectangle */
-  background-color: shite; /* Warna background rectangle */
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-  border-radius: 0px 35px 0px 0px;
-  font-weight: bold;
-  text-align: center; /* Mengatur teks di tengah secara horizontal */
-  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
-  align-items: center; /* Mengatur teks di tengah secara vertikal */
-  justify-content: center; /* Mengatur teks di tengah secara horizontal */
-}
-
-.top-left-2 {
-  position: relatif;
-  buttom: 60%;
-  right: 86.3%;
-  width: 150px; /* Lebar rectangle */
-  height: 40px; /* Tinggi rectangle */
-  background-color: shite; /* Warna background rectangle */
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-  border-radius: 0px 35px 0px 0px;
-  font-weight: bold;
-  text-align: center; /* Mengatur teks di tengah secara horizontal */
-  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
-  align-items: center; /* Mengatur teks di tengah secara vertikal */
-  justify-content: center; /* Mengatur teks di tengah secara horizontal */
-}
-
-.pertama {
-  max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
-  margin: 0 auto; /* Menengahkan elemen dalam kontainer */
-  border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
-}
-
-.card-header {
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-}
-
-.form-check-inline {
-  max-width: 250px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
-  width: 200%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
-  height: 70px; /* Mengatur tinggi elemen */
-  background-color: #177e89;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  margin-right: 60px;
-  margin-left: 60px;
-}
-
-.form-check-input {
-  position: relative; /* Menggunakan posisi relatif */
-  bottom: -21.5px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
-  left: 40px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-  font-size: 20px;
-}
-
-.form-check-input:checked {
-  background-color: #666666; /* Ganti dengan warna yang Anda inginkan saat diklik */
-  color: black; /* Ganti dengan warna teks yang Anda inginkan saat diklik */
-}
-
-.form-check-label {
-  position: relative; /* Menggunakan posisi relatif */
-  bottom: -21.5px; /* Mengatur posisi vertikal ke atas sejauh 5px */
-  right: 5px; /* Mengatur posisi horizontal ke kiri sejauh 5px */
-  font-size: 20px;
-}
-
-.btn {
-  position: relative; /* Menggunakan posisi relatif */
-  background-color: #177e89;
-  color: #fff;
-  border-radius: 20px;
-  margin-top: -3%; /* Sesuaikan margin yang Anda inginkan */
-  margin-right: 0%;
-  width: 20%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
-  height: 30px; /* Mengatur tinggi elemen */
-}
-
-.btn-text {
-  display: block;
-  font-size: 15px;
-  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
-}
-
-.btn-text-kembali {
-  display: block;
-  font-size: 15px;
-  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
-  background-color: #b41212;
-}
-
-@media screen and (max-width: 768px) {
-  .btn {
-    width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-top: 10px; /* Sesuaikan margin sesuai kebutuhan */
-  }
-
-  .btn-text {
-    font-size: 12px; /* Mengurangi ukuran font untuk teks pada layar kecil */
-    margin-top: 0%; /* Sesuaikan margin sesuai kebutuhan */
-  }
-}
+/* tab end*/
 
 /* data */
 
@@ -267,7 +116,78 @@ h6 {
   width: 100%;
 }
 
-/* data end */
+.top-left-2 {
+  position: relatif;
+  buttom: 60%;
+  right: 86.3%;
+  width: 150px; /* Lebar rectangle */
+  height: 40px; /* Tinggi rectangle */
+  background-color: shite; /* Warna background rectangle */
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+  border-radius: 0px 35px 0px 0px;
+  font-weight: bold;
+  text-align: center; /* Mengatur teks di tengah secara horizontal */
+  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
+  align-items: center; /* Mengatur teks di tengah secara vertikal */
+  justify-content: center; /* Mengatur teks di tengah secara horizontal */
+}
+
+.form-check-inline {
+  max-width: 300px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
+  width: 100%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  height: 70px; /* Mengatur tinggi elemen */
+  background-color: #177e89;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.form-check-input {
+  position: relative; /* Menggunakan posisi relatif */
+  bottom: -21.5px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
+  left: 40px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
+  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
+  font-size: 20px;
+}
+
+.form-check-input:checked {
+  background-color: #666666; /* Ganti dengan warna yang Anda inginkan saat diklik */
+  color: black; /* Ganti dengan warna teks yang Anda inginkan saat diklik */
+}
+
+.form-check-label {
+  position: relative; /* Menggunakan posisi relatif */
+  bottom: -21.5px; /* Mengatur posisi vertikal ke atas sejauh 5px */
+  right: 5px; /* Mengatur posisi horizontal ke kiri sejauh 5px */
+  font-size: 20px;
+}
+
+.btn {
+  position: relative; /* Menggunakan posisi relatif */
+  background-color: #177e89;
+  color: #fff;
+  border-radius: 20px !important;
+  margin-top: -3%; /* Sesuaikan margin yang Anda inginkan */
+  margin-right: 0%;
+  width: 20%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
+  height: 30px; /* Mengatur tinggi elemen */
+}
+
+.btn-text {
+  display: block;
+  font-size: 15px;
+  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.btn-text-kembali {
+  display: block;
+  font-size: 15px;
+  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
+  background-color: #b41212;
+}
 
 .small {
   margin-top: 2%;
@@ -276,10 +196,125 @@ h6 {
 }
 
 p.mb-0 {
-  color: #fff; /* Ganti dengan kode warna */
+  color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+.lanjut-btn {
+  width: 20%;
+}
+
+.lanjut-btn-2 {
+  width: 60%;
+}
+
+thead {
+  top: 0;
+  position: sticky;
+}
+
+table {
+  border-collapse: collapse;
+  position: relative;
+  margin: auto;
+  color: #444;
+}
+
+table td {
+  border: 1px solid #f5f5f5;
+  padding: 7px 17px;
+  border-color: black;
+  width: 10%;
+}
+
+.button-per1 {
+  float: right;
+}
+
+/* data end */
+
+/* /* footer * */
+
+.footer {
+  background-color: #084c61;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.footer iframe {
+  width: 80%;
+  height: 300px;
+}
+
+.footer h1 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copy {
+  background-color: #177e89;
+  padding: 10px 0;
+}
+
+.copy p {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.footer .alamat p,
+.telfon p,
+.instagram p,
+.facebook p {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* footer end */
+
+@media (min-width: 500px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+  .btn {
+    width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-top: 10px; /* Sesuaikan margin sesuai kebutuhan */
+  }
+
+  .btn-text {
+    font-size: 12px; /* Mengurangi ukuran font untuk teks pada layar kecil */
+    margin-top: 0%; /* Sesuaikan margin sesuai kebutuhan */
+  }
+
   .small {
     margin-right: 0;
     margin-top: 20px;
@@ -350,35 +385,74 @@ p.mb-0 {
   .top-left-group {
     margin-top: 15%;
   }
-}
+  .small {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 
-.lanjut-btn {
-  width: 35%;
-}
+  .row.row-xl-2 {
+    margin-left: 0;
+  }
 
-.lanjut-btn-2 {
-  width: 60%;
-}
+  .isi-inden,
+  .isi-riwayat {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #ffc857;
+    margin-left: 0%;
+  }
 
-thead {
-  top: 0;
-  position: sticky;
-}
+  .pertama {
+    max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
+    margin: 0 auto; /* Menengahkan elemen dalam kontainer */
+    border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
+  }
 
-table {
-  border-collapse: collapse;
-  position: relative;
-  margin: auto;
-  color: #444;
-}
+  .form-check-inline {
+    max-width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 40px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+  }
 
-table td {
-  border: 1px solid #f5f5f5;
-  padding: 7px 17px;
-  border-color: black;
-  width: 10%;
-}
+  .btn {
+    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+    bottom: 40%;
+  }
 
-.button-per1 {
-  float: right;
+  .cont-iden {
+    position: relative;
+    width: 130%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: -15%;
+  }
+
+  .pertama {
+    margin-top: 10;
+  }
+
+  .lanjut-btn {
+    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
+    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
+    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
+    bottom: 40%;
+  }
+
+  .banner-iden {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .lanjut-btn {
+    max-width: 90%;
+  }
+
+  .top-left-group {
+    margin-top: 15%;
+  }
 }
