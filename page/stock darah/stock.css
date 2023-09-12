@@ -14,9 +14,8 @@ body .navbar {
   margin: auto 20px;
 }
 
-body .navbar {
-  font-weight: 600;
-}
+/* navbar itemm */
+
 .banner-title {
   height: 250px;
   overflow: hidden;
