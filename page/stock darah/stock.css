@@ -54,6 +54,16 @@ body .navbar {
   background: linear-gradient(to bottom, #084c6158, #ffc75733);
 }
 
+/* table */
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* table end */
+
 /* /* footer * */
 
 .footer {
