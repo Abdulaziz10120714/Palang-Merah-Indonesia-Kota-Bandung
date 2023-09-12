@@ -32,7 +32,113 @@
         <div class="col-md-12 mb-4">
           <div class="card mb-4 shadow-lg bg-white">
             <div class="card-body">
-              
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <!-- Tombol untuk mengambil foto (membuka modal) -->
+                        <button class="btn btn-primary btn-block" id="openModalBtn">Ambil Foto</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal -->
+            <div class="modal fade" id="captureModal" tabindex="-1" role="dialog" aria-labelledby="captureModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="captureModalLabel">Ambil Foto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Tampilkan video dari kamera -->
+                            <video id="video" width="100%" autoplay></video>
+                            <br>
+                            <!-- Menampilkan tombol "Ambil" -->
+                            <button class="btn btn-primary" id="captureBtn" style="display: inline-block;">Ambil</button>
+                            <!-- Menampilkan tombol "Ulang" -->
+                            <button class="btn btn-secondary ml-2" id="retakeBtn" style="display: none;">Ulang</button>
+                            <!-- Menampilkan tombol "Simpan" -->
+                            <button class="btn btn-success ml-2" id="saveBtn" style="display: none;">Simpan</button>
+                            <!-- Tampilan gambar hasil tangkapan -->
+                            <canvas id="canvas" style="display: none;"></canvas>
+                            <br>
+                            <!-- Menampilkan gambar yang diambil -->
+                            <img id="photo" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mengimpor jQuery, Popper.js, Bootstrap JS, dan JavaScript untuk mengambil gambar -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                var video = document.getElementById("video");
+                var canvas = document.getElementById("canvas");
+                var photo = document.getElementById("photo");
+                var captureBtn = document.getElementById("captureBtn");
+                var retakeBtn = document.getElementById("retakeBtn");
+                var saveBtn = document.getElementById("saveBtn");
+                var openModalBtn = document.getElementById("openModalBtn");
+        
+                // Mengakses kamera perangkat
+                navigator.mediaDevices
+                    .getUserMedia({ video: true })
+                    .then(function (stream) {
+                        // Menghubungkan video element dengan stream dari kamera
+                        video.srcObject = stream;
+                        video.play();
+                    })
+                    .catch(function (err) {
+                        console.error("Tidak dapat mengakses kamera: " + err);
+                    });
+        
+                // Membuka modal saat tombol "Ambil Foto" ditekan
+                openModalBtn.addEventListener("click", function () {
+                    $('#captureModal').modal('show'); // Membuka modal
+                });
+        
+                // Mengambil foto saat tombol "Ambil" ditekan
+                captureBtn.addEventListener("click", function () {
+                    // Mengambil frame dari video dan menggambar di canvas
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
+        
+                    // Menampilkan gambar hasil tangkapan
+                    photo.src = canvas.toDataURL("image/png");
+                    photo.style.display = "block";
+        
+                    // Menampilkan tombol "Ulang" dan "Simpan"
+                    retakeBtn.style.display = "inline-block";
+                    saveBtn.style.display = "inline-block";
+                    // Menyembunyikan tombol "Ambil"
+                    captureBtn.style.display = "none";
+                });
+        
+                // Mengambil foto ulang saat tombol "Ulang" ditekan
+                retakeBtn.addEventListener("click", function () {
+                    // Menghapus gambar yang ditampilkan
+                    photo.src = "";
+                    photo.style.display = "none";
+        
+                    // Menyembunyikan tombol "Ulang" dan "Simpan"
+                    retakeBtn.style.display = "none";
+                    saveBtn.style.display = "none";
+                    // Menampilkan tombol "Ambil"
+                    captureBtn.style.display = "inline-block";
+                });
+        
+                // Menyimpan foto saat tombol "Simpan" ditekan
+                saveBtn.addEventListener("click", function () {
+                    // Mendapatkan gambar yang akan disimpan
+                    var savedImage = photo.src;
+        
+                    // Anda dapat menambahkan logika untuk menyimpan gambar ke server atau penyimpanan lokal di sini
+                });
+            </script>
         <div class="row mt-5 d-flex justify-content-center">
       <div class="col-sm-2">
         <font style="vertical-align: inherit;">
