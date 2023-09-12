@@ -48,8 +48,8 @@ body .navbar {
   top: 0;
 }
 .lingkaran1 {
-  width: 180px;
-  height: 180px;
+  width: 35vmin;
+  height: 35vmin;
   border-radius: 100%;
   background: linear-gradient(to bottom, #084c6158, #ffc75733);
 }

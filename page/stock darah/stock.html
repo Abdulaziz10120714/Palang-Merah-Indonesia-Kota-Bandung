@@ -98,8 +98,8 @@
      <div class="mt-5 p-5 col-sm-12 banner-title d-flex">
       <div class="col-md-8 title-page ">
          <div class="lingkaran1 ms-5">
-          <h1 style="font-family: 'Alex Brush'; font-size: 80px;" >Stock</h1>
-          <h1 class="ms-5" style="font-family: poppins;">Darah</h1> 
+          <h1 style="font-family: 'Alex Brush'; font-size: 15vmin" >Stock</h1>
+          <h1 class="ms-5" style="font-family: poppins; font-size: 6vmin;">Darah</h1> 
          </div>
       </div>
       <div class="col-md-4 image-banner">
@@ -115,7 +115,7 @@
     <!-- isi -->
     <div class="container my-5 fw-bold" >
       <div class="contain text-center" style="font-size: 6vmin">Stok Darah PMI Kota Bandung</div>
-      <div class="container mt-5"><table class="table"> 
+      <div class="container mt-5"><table class="table" style="font-size: 2vmin"> 
         <tr class="cont-satu text-center" >
           <td style="background-color: rgba(8, 76, 97, 0.5) !important;">NO</td>
           <td style="background-color: rgba(8, 76, 97, 0.5) !important;">Jenis golongan darah</td>
@@ -164,7 +164,7 @@
           <td></td>
         </tr>
        </table></div>
-       <div class="container text-center my-5">-----  Terakhir Update : Tuesday, 22 August 2023 Pukul 14:13:00 </div>
+       <div class="container text-center my-5">-----  Terakhir Update : <span id="tanggalwaktu"></span></div>
     </div>
 
     <!-- isi end -->
@@ -202,6 +202,19 @@
       <p class="text-center py-2 text-white ">Copyright &copy; 2023 UTD PMI Kota Bandung. All rights reserved.</p>
    </div>
     <!-- footer end -->
+    <script>
+      var tw = new Date();
+      if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+      else (a=tw.getTime());
+      tw.setTime(a);
+      var tahun= tw.getFullYear ();
+      var hari= tw.getDay ();
+      var bulan= tw.getMonth ();
+      var tanggal= tw.getDate ();
+      var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+      var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+      document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+      </script>
     <script>feather.replace();</script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
       </body>
