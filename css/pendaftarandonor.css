@@ -8,6 +8,39 @@ body {
   font-weight: bold;
 }
 
+.btn-primary {
+  border: 1px solid #177e89 !important;
+  background-color: #177e89;
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61;
+  color: white;
+  box-shadow: 0 0 0 4px #084c61;
+}
+
+.btn-primary:active {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+}
+
+.btn-danger:hover {
+  border: 1px solid #b41212 !important;
+  color: white;
+  box-shadow: 0 0 0 4px #b41212 !important;
+}
+
+.form-check-input {
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: #666666 !important;
+  border-color: #666666 !important;
+}
+
 /* navbar */
 body .navbar {
   font-weight: 600;
@@ -18,198 +51,105 @@ body .navbar {
 /* navbar end */
 
 /* tab */
-.cont-tab {
-  margin-top: 100px;
+
+#nav-tab {
+  font-size: 1.6vmin;
 }
 /* tab end*/
 
-/* data */
-
-.cont-iden,
-.cont-riwayat {
-  position: relative;
+/* head */
+.head {
+  margin-top: 100px;
 }
 
-.banner-iden,
-.banner-riwayat {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
+.card-header {
+  color: white;
+  background-color: rgba(23, 126, 137, 0.8);
+}
+
+.alert {
+  color: black;
+  background-color: rgba(23, 126, 137, 0.1);
+}
+/* head end */
+
+/* data */
+.form-check {
+  background-color: #177e89;
+  color: white;
+}
+.form-check-input {
+  margin-left: 1px !important;
+}
+
+.banner-pengganti,
+.banner-keluarga,
+.banner-satu,
+.banner-dua,
+.banner-tiga,
+.banner-konfirmasi {
+  margin-top: -5px;
+  position: relative;
   width: 100%;
+  height: 50px;
   background-color: #084c61;
   padding: 10px;
   z-index: 1;
-  border-radius: 30px;
-}
-.isi-inden,
-.isi-riwayat {
-  position: relative;
-  height: 700px;
-  width: 200%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #ffc857;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -50%;
-}
-
-.isi-inden-2 {
-  position: relative;
-  height: 780px;
-  width: 200%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #ffc857;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -50%;
-}
-
-.isi-inden-3 {
-  position: relative;
-  height: 810px;
-  width: 200%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #ffc857;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -50%;
-}
-
-.isi-inden-4 {
-  position: relative;
-  height: 600px;
-  width: 200%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #ffc857;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -50%;
-}
-
-.isi-inden-awal {
-  position: relative;
-  height: 600px;
-  width: 200%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #ffc857;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-left: -50%;
-}
-
-.banner-iden {
-  margin-top: 15px;
-  width: 50%;
-  margin-right: 50%;
-}
-
-.btn-mobile {
-  background-color: #177e89;
-  border: rgb(23, 126, 137) solid 1px;
-}
-
-.row.row-xl-2 {
-  position: relative;
-  margin-left: 25%;
-  width: 100%;
-}
-
-.top-left-2 {
-  position: relatif;
-  buttom: 60%;
-  right: 86.3%;
-  width: 150px; /* Lebar rectangle */
-  height: 40px; /* Tinggi rectangle */
-  background-color: shite; /* Warna background rectangle */
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-  border-radius: 0px 35px 0px 0px;
-  font-weight: bold;
-  text-align: center; /* Mengatur teks di tengah secara horizontal */
-  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
-  align-items: center; /* Mengatur teks di tengah secara vertikal */
-  justify-content: center; /* Mengatur teks di tengah secara horizontal */
-}
-
-.form-check-inline {
-  max-width: 300px; /* Sesuaikan lebar maksimal sesuai kebutuhan Anda */
-  width: 100%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
-  height: 70px; /* Mengatur tinggi elemen */
-  background-color: #177e89;
   color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  margin-right: 60px;
-  margin-left: 60px;
+  text-align: center;
 }
 
-.form-check-input {
-  position: relative; /* Menggunakan posisi relatif */
-  bottom: -21.5px; /* Mengatur posisi vertikal ke bawah sejauh 10px */
-  left: 40px; /* Mengatur posisi horizontal ke kanan sejauh 10px */
-  border: 1px solid black; /* Menambahkan garis pinggir dengan warna */
-  font-size: 20px;
-}
-
-.form-check-input:checked {
-  background-color: #666666; /* Ganti dengan warna yang Anda inginkan saat diklik */
-  color: black; /* Ganti dengan warna teks yang Anda inginkan saat diklik */
-}
-
-.form-check-label {
-  position: relative; /* Menggunakan posisi relatif */
-  bottom: -21.5px; /* Mengatur posisi vertikal ke atas sejauh 5px */
-  right: 5px; /* Mengatur posisi horizontal ke kiri sejauh 5px */
-  font-size: 20px;
-}
-
-.btn {
-  position: relative; /* Menggunakan posisi relatif */
-  background-color: #177e89;
-  color: #fff;
-  border-radius: 20px !important;
-  margin-top: -3%; /* Sesuaikan margin yang Anda inginkan */
-  margin-right: 0%;
-  width: 20%; /* Pastikan elemen ini mengambil seluruh lebar yang tersedia */
-  height: 30px; /* Mengatur tinggi elemen */
-}
-
-.btn-text {
-  display: block;
-  font-size: 15px;
-  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
-}
-
-.btn-text-kembali {
-  display: block;
-  font-size: 15px;
-  margin-top: -2%; /* Sesuaikan margin sesuai kebutuhan */
-  background-color: #b41212;
-}
-
-.small {
-  margin-top: 2%;
-  width: auto;
+.data-pengganti,
+.data-keluarga {
+  position: relative;
+  height: 530px;
+  border-radius: 30px;
   color: black;
+  z-index: 2;
 }
 
-p.mb-0 {
-  color: #fff;
+.data-pengganti input,
+.data-keluarga input {
+  border: 1px solid #177e89 !important;
+  active: 1px solid #177e89 !important;
 }
 
-.lanjut-btn {
-  width: 20%;
+.data-pengganti select,
+.data-keluarga select {
+  border: 1px solid #177e89 !important;
+  active: 1px solid #177e89 !important;
 }
 
-.lanjut-btn-2 {
-  width: 60%;
+.data-pengganti input:focus,
+.data-keluarga input:focus {
+  box-shadow: none !important;
+  outline: 3px solid #177e89 !important;
 }
 
-thead {
-  top: 0;
-  position: sticky;
+.data-pengganti select:focus,
+.data-keluarga select:focus {
+  box-shadow: none !important;
+  outline: 3px solid #177e89 !important;
+}
+
+/* data end */
+
+/* pertanyaan 1 */
+.data-satu,
+.data-dua,
+.data-tiga,
+.data-konfirmasi {
+  position: relative;
+  height: 600px;
+  border-radius: 30px;
+  color: black;
+  z-index: 2;
+  font-size: 2vmin !important;
+}
+
+.isi-satu {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 table {
@@ -226,13 +166,12 @@ table td {
   width: 10%;
 }
 
-.button-per1 {
-  float: right;
-}
+/* pertanyaan 1 end*/
 
-/* data end */
+/* pertanyaan 2 */
+/* pertanyaan 2 end */
 
-/* /* footer * */
+/* footer */
 
 .footer {
   background-color: #084c61;
@@ -278,181 +217,8 @@ table td {
 
 /* footer end */
 
-@media (min-width: 500px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
-
-  .gradient-custom-2 {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
-}
-
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-
-  .btn {
-    width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-top: 10px; /* Sesuaikan margin sesuai kebutuhan */
-  }
-
-  .btn-text {
-    font-size: 12px; /* Mengurangi ukuran font untuk teks pada layar kecil */
-    margin-top: 0%; /* Sesuaikan margin sesuai kebutuhan */
-  }
-
-  .small {
-    margin-right: 0;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .row.row-xl-2 {
-    margin-left: 0;
-  }
-
-  .isi-inden,
-  .isi-riwayat {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 30px;
-    color: #ffc857;
-    margin-left: 0%;
-  }
-
-  .pertama {
-    max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
-    margin: 0 auto; /* Menengahkan elemen dalam kontainer */
-    border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
-  }
-
-  .form-check-inline {
-    max-width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 40px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-  }
-
-  .btn {
-    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-    bottom: 40%;
-  }
-
-  .cont-iden {
-    position: relative;
-    width: 130%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: -15%;
-  }
-
-  .pertama {
-    margin-top: 10;
-  }
-
-  .lanjut-btn {
-    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-    bottom: 40%;
-  }
-
-  .banner-iden {
-    margin-top: 40px;
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .lanjut-btn {
-    max-width: 90%;
-  }
-
-  .top-left-group {
-    margin-top: 15%;
-  }
-  .small {
-    margin-right: 0;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .row.row-xl-2 {
-    margin-left: 0;
-  }
-
-  .isi-inden,
-  .isi-riwayat {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 30px;
-    color: #ffc857;
-    margin-left: 0%;
-  }
-
-  .pertama {
-    max-width: 80%; /* Mengatur lebar maksimal elemen menjadi 50% dari lebar parent atau sesuai kebutuhan Anda */
-    margin: 0 auto; /* Menengahkan elemen dalam kontainer */
-    border: 1px solid white; /* Menambahkan garis pinggir dengan warna */
-  }
-
-  .form-check-inline {
-    max-width: 100%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 40px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-  }
-
-  .btn {
-    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-    bottom: 40%;
-  }
-
-  .cont-iden {
-    position: relative;
-    width: 130%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: -15%;
-  }
-
-  .pertama {
-    margin-top: 10;
-  }
-
-  .lanjut-btn {
-    max-width: 60%; /* Mengambil seluruh lebar tersedia pada layar kecil */
-    margin-left: 0%; /* Sesuaikan margin kiri sesuai kebutuhan */
-    height: 30px; /* Mengurangi tinggi elemen untuk layar kecil jika diperlukan */
-    bottom: 40%;
-  }
-
-  .banner-iden {
-    margin-top: 40px;
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .lanjut-btn {
-    max-width: 90%;
-  }
-
-  .top-left-group {
-    margin-top: 15%;
+  .head .card {
+    max-width: none !important;
   }
 }
