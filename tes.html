@@ -12,76 +12,62 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button
-          class="nav-link active"
-          id="nav-home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-home"
-          type="button"
-          role="tab"
-          aria-controls="nav-home"
-          aria-selected="true"
-        >
-          Home
-        </button>
-        <button
-          class="nav-link"
-          id="nav-profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-profile"
-          type="button"
-          role="tab"
-          aria-controls="nav-profile"
-          aria-selected="false"
-        >
-          Profile
-        </button>
-        <button
-          class="nav-link"
-          id="nav-contact-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-contact"
-          type="button"
-          role="tab"
-          aria-controls="nav-contact"
-          aria-selected="false"
-        >
-          Contact
-        </button>
+    <div class="cont-iden container">
+      <div class="banner-iden container text-center" style="font-size: 4vmin">
+        <p class="mb-0 fw-bold">IDENTITAS DONOR</p>
       </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div
-        class="tab-pane fade show active"
-        id="nav-home"
-        role="tabpanel"
-        aria-labelledby="nav-home-tab"
-        tabindex="0"
-      >
-        ...
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-profile"
-        role="tabpanel"
-        aria-labelledby="nav-profile-tab"
-        tabindex="0"
-      >
-        ...
-      </div>
-      <div
-        class="tab-pane fade"
-        id="nav-contact"
-        role="tabpanel"
-        aria-labelledby="nav-contact-tab"
-        tabindex="0"
-      >
-        ...
+        <div class="small fw-semibold mt-2">ID DONOR</div>
+        <input id="idDonor" type="text" class="form-control" placeholder="" />
+
+        <div class="row mt-2">
+          <div class="col-md-8 col-sm-6">
+            <div class="small fw-semibold mt-2">NAMA</div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <input
+              id="namaUser"
+              type="text"
+              class="form-control text-end"
+              placeholder=""
+              disabled
+            />
+          </div>
+        </div>
+        <hr />
+
+        <div class="row mt-2">
+          <div class="col-md-8 col-sm-6">
+            <div class="small fw-semibold mt-2">GOLONGAN DARAH</div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <input
+              id="golDarah"
+              type="text"
+              class="form-control text-end"
+              placeholder=""
+              disabled
+            />
+          </div>
+        </div>
+        <hr />
+
+        <div class="row mt-2">
+          <div class="col-md-8 col-sm-6">
+            <div class="small fw-semibold mt-2">Tgl. Kembali Donor Reguler</div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <input
+              id="kembaliDonor"
+              type="text"
+              class="form-control text-end"
+              placeholder=""
+              disabled
+            />
+          </div>
+        </div>
+        <hr />
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
