@@ -26,3 +26,141 @@
 .form-select{
     border-color: #177E89;
 }
+.card img {
+  margin: 10px;
+  margin-left: 45%;
+}
+
+.btn{
+  background: #177E89;
+  border-radius: 50px;
+  color: white;
+}
+.btn-foto{
+  margin-left: 45%;
+}
+
+@media (max-width:1200px) {
+  .card-body {
+   font-size: 80%;
+  }
+  .idpilih{
+    margin-top: 1%;
+  }
+}
+@media (max-width:992px) {
+  .card-body {
+    font-size: 12px;
+  }
+  .card-body img{
+    margin-left:44%;
+    width: 13%;
+  }
+  .idpilih{
+    margin-top: 2%;
+  }
+  .form-select{
+
+    font-size:10px;
+  }
+  .form-control{
+    font-size:10px;
+  }
+  .btn-foto{
+    margin-left:45%;
+    font-size:70%;
+  }
+  .btn{
+    font-size:70%;
+    
+  }
+}
+@media (max-width:768px) {
+  .kartu {
+    width: 400px;
+    margin-left:5% ;
+    margin-bottom: -2%;
+     }
+  .card-body {
+    font-size: 12px;
+  }
+  .card-body img{
+    margin-left:45%;
+    width: 13%;
+  }
+
+  .btn-foto{
+    margin-top: -2%;
+    margin-left:42%;
+    font-size:70%;
+    width: 20%;
+  }
+  .btn{
+    font-size:70%;
+    
+  }
+  
+  .form-select{
+
+    font-size:10px;
+  }
+  .form-control{
+    font-size:10px;
+  }
+  .idpilih{
+    width: 28%;
+    margin-left: -1%;
+  }
+  .ID{
+    width: 280px;
+   margin-top: -8%;
+  }
+  .JK{
+    width: 50%;
+    
+  }
+  .GD{
+    width: 50%;
+    
+  }
+  .pekerjaan{
+    width: 100%;
+  }
+  .kota{
+    width: 100%;
+  }
+  .kecamatan{
+    width: 100%;
+  }
+  .kelurahan{
+    width: 100%;
+  }
+ 
+}
+@media (max-width:576px){
+ 
+  .card-body {
+    font-size: 11px;
+  }
+
+  .kartu {
+    width: 400px;
+    margin-left:-20% ;
+     }
+  .idpilih{
+      width: 28%;
+      margin-left: -1%;
+      margin-top:2% ;
+   }
+   .ID{
+    width: 285px;
+    margin-left: -1%;
+   }
+   .form-select{
+
+    font-size:10px;
+  }
+  .form-control{
+    font-size:10px;
+  }
+}
