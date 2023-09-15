@@ -54,14 +54,14 @@ body .navbar {
 
 /* tab */
 #nav-tab .nav-link.active {
-  font-size: 2vmin;
+  font-size: 1.5vmin;
   background-color: #177e89;
   color: #ffffff;
   transition: 0.3s;
 }
 
 #nav-tab .nav-link:not(.active) {
-  font-size: 1.3vmin;
+  font-size: 1.2vmin;
   color: #000000;
 }
 /* tab end*/
@@ -144,13 +144,23 @@ body .navbar {
   outline: 3px solid #177e89 !important;
 }
 
+.pertanyaan-satu input[type='radio'],
+.pertanyaan-dua input[type='radio'],
+.pertanyaan-tiga input[type='radio'] {
+  -webkit-transform: scale(1.2);
+  margin-left: 15px;
+}
+
+.pertanyaan-satu label,
+.pertanyaan-dua label,
+.pertanyaan-tiga label {
+  -webkit-transform: scale(1.2);
+  margin-left: 15px;
+}
 /* data end */
 
 /* pertanyaan 1 */
-.data-satu,
-.data-dua,
-.data-tiga,
-.data-konfirmasi {
+.data-satu {
   position: relative;
   height: 650px;
   border-radius: 30px;
@@ -262,5 +272,11 @@ table td {
 @media (max-width: 768px) {
   .head .card {
     max-width: none !important;
+  }
+
+  .pertanyaan-satu input[type='radio'],
+  .pertanyaan-dua input[type='radio'],
+  .pertanyaan-tiga input[type='radio'] {
+    -webkit-transform: scale(1.3);
   }
 }

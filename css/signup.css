@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* navbar */
@@ -28,7 +28,7 @@ body .navbar {
 
 /* Teks responsif */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 16px; /* Ukuran teks default */
 }
@@ -40,14 +40,13 @@ body {
   }
 }
 
-/* Gaya teks judul responsif */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
@@ -62,8 +61,15 @@ h6 {
   border-radius: 20px;
 }
 
-.fut {
-  margin-top: auto;
+.copy {
+  margin-top: 4rem;
+  background-color: #177e89;
+  padding: 10px 0;
+}
+
+.copy p {
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
 /* Media query untuk layar dengan lebar maksimal 767px */
@@ -81,7 +87,7 @@ h6 {
   max-width: 100%; /* Memastikan konten tidak melebihi lebar kolom */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .coba {
     position: absolute; /* Mengatur posisi absolut */
     left: 0; /* Mengatur posisi horizontal ke kiri */
@@ -90,8 +96,8 @@ h6 {
     transform: translateY(-50%); /* Mengatur posisi vertikal */
     margin: 0; /* Menghapus margin */
   }
-
-  .fut {
-    position: fixed;
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
   }
 }
