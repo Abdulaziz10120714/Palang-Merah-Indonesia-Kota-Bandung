@@ -113,6 +113,10 @@ body .navbar {
   margin-bottom: 7%;
 }
 
+.put-grup {
+  margin-left: 9.5%;
+}
+
 @media (max-width: 768px) {
   .row-cols-md-3 {
     flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
@@ -362,4 +366,36 @@ body .navbar {
     flex: 1; /* Membagi ruang secara merata di antara elemen-elemen */
     margin: auto; /* Menambahkan jarak antara elemen-elemen */
   }
+
+  .cari {
+    margin-bottom: -20px;
+    widht: 10%;
+  }
 }
+
+/* isi */
+.cari {
+  margin-top: 50px;
+}
+.icon {
+  margin-left: -48px;
+}
+.form-control {
+}
+
+.cari .tombol {
+  background-color: #177e89;
+}
+::placeholder {
+  color: white !important;
+  opacity: 0.3 !important;
+}
+
+.cari input {
+  background-color: #084c61 !important;
+  border: none !important;
+  color: white;
+  font-size: 3vmin;
+}
+
+/* isi end */
