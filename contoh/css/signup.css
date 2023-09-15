@@ -61,17 +61,6 @@ h6 {
   border-radius: 20px;
 }
 
-.copy {
-  margin-top: 4rem;
-  background-color: #177e89;
-  padding: 10px 0;
-}
-
-.copy p {
-  font-size: 0.7em;
-  font-weight: bold;
-}
-
 /* Media query untuk layar dengan lebar maksimal 767px */
 @media (max-width: 950px) {
   img {
