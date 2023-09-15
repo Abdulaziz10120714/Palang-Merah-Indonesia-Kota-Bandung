@@ -115,16 +115,36 @@
 <!-- serching -->
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-<div class="p-4">
-<div class="put-grup input-group">
-    <div id="search-autocomplete" class="form-outline">
-      <input type="search" name="keyword" id="form1" class="form-control" placeholder="Cari Kegiatan" />
+<div class="cari container">
+  <div class="row d-flex justify-content-start">
+    <div class="col-md-8 col-sm-6">
+      <div class="input-group mt-2">
+        <input
+          class="form-cari form-control border rounded-pill text-white"
+          type="search"
+          placeholder="Silahkan Masukan ID Donor Anda"
+          style="font-size: 2vmin"
+          id="id-donor"
+        />
+        <span class="input-group-append">
+          <button
+            class="icon btn btn-outline-secondar border rounded-pill text-white"
+            disabled
+          >
+            <i data-feather="search"></i>
+            <button
+              class="tombol btn btn-outline-secondary border rounded-pill ms-3 text-white"
+              type="button"
+              id="btnCari">
+              Cari
+            </button>
+          </button>
+        </span>
+      </div>
     </div>
-    <button type="button" class="btn-search btn btn-primary " id="btnSearch">
-      <i class="fas fa-search"></i>
-    </button>
   </div>
 </div>
+  
 <!-- Kegiatan -->
 <section class="kegiatan p-5">
     <div class="container"> 
@@ -135,9 +155,11 @@
         <blockquote class="blockquote">
           <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
           <p style="font-size: 15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-          <a href="#penutup">
-            <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small;">Lanjutkan Membaca</footer>
-          </a>
+          <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+            <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+              <span class="lan-mem">Lanjutkan Membaca</span>
+            </footer>
+            </a>
         </blockquote>
       </div>
     </div>
@@ -150,9 +172,11 @@
       <blockquote class="blockquote mb-0">
         <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
         <p style="font-size:15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-        <a href="#penutup">
-          <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small;">Lanjutkan Membaca</footer>
-        </a>
+        <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+          <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+            <span class="lan-mem">Lanjutkan Membaca</span>
+          </footer>
+          </a>
       </blockquote>
     </div>
   </div>
@@ -165,9 +189,11 @@
       <blockquote class="blockquote mb-0">
         <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
         <p style="font-size:15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-        <a href="#penutup">
-          <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small">Lanjutkan Membaca</footer>
-        </a>
+        <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+          <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+            <span class="lan-mem">Lanjutkan Membaca</span>
+          </footer>
+          </a>
       </blockquote>
     </div>
   </div>
@@ -180,9 +206,11 @@
       <blockquote class="blockquote">
         <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
         <p style="font-size:15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-        <a href="#penutup">
-          <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small;">Lanjutkan Membaca</footer>
-        </a>
+        <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+          <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+            <span class="lan-mem">Lanjutkan Membaca</span>
+          </footer>
+          </a>
       </blockquote>
     </div>
   </div>
@@ -195,9 +223,11 @@
       <blockquote class="blockquote">
         <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
         <p style="font-size:15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-        <a href="#penutup">
-          <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small;">Lanjutkan Membaca</footer>
-        </a>
+        <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+          <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+            <span class="lan-mem">Lanjutkan Membaca</span>
+          </footer>
+          </a>
       </blockquote>
     </div>
   </div>
@@ -210,9 +240,11 @@
       <blockquote class="blockquote">
         <p style="font-size: 70%; font-family: 'poppins'; color: red;">04-09-2023</p>
         <p style="font-size:15px; font-family: 'poppins';">Serah terima jabatan PMI Kota Bandung...</p>
-        <a href="#penutup">
-          <footer class="text-end blockquote-footer text-primary" style="font-family: 'poppins';font-size: small;">Lanjutkan Membaca</footer>
-        </a>
+        <a href="../auth/lanjutmembaca.html" style="text-decoration: none;">
+          <footer class="text-end blockquote-footer" style="font-family: 'poppins'; font-size: small;">
+            <span class="lan-mem">Lanjutkan Membaca</span>
+          </footer>
+          </a>
       </blockquote>
     </div>
   </div>
