@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 20px;
+}
+
+.abuabu {
+  background-color: #f5f5f5;
+}
+
+.small-img {
+  max-width: 100%; /* Limit the width to the column width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a maximum height for consistent sizing */
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px; /* Lebar rectangle */
+  height: 40px; /* Tinggi rectangle */
+  background-color: #ffc857; /* Warna background rectangle */
+  border-radius: 5px 0px 35px 0px;
+  font-weight: bold;
+  text-align: center; /* Mengatur teks di tengah secara horizontal */
+  display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
+  align-items: center; /* Mengatur teks di tengah secara vertikal */
+  justify-content: center; /* Mengatur teks di tengah secara horizontal */
+}
+
+/* /* footer * */
+
+.footer {
+  background-color: #084c61;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.footer iframe {
+  width: 80%;
+  height: 300px;
+}
+
+.footer h1 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.footer i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copy {
+  background-color: #177e89;
+  padding: 10px 0;
+}
+
+.copy p {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.footer .alamat p,
+.telfon p,
+.instagram p,
+.facebook p {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* footer end */
+
+/* media quere */
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .profile .container {
+    margin-top: 1rem !important;
+  }
+
+  .footer iframe {
+    height: 200px;
+  }
+  .list-card {
+    margin: 10px auto;
+  }
+  .col-12 {
+    padding: 0 10px;
+  }
+
+  .link-image .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .txtpmi {
+  }
+
+  .footer .alamat p {
+    padding: none;
+  }
+  .footer .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+
+  .pmi {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .gambarGerak {
+    display: none;
+  }
+
+  .aktifitas.container {
+    border-radius: 0;
+    margin-top: 70px;
+  }
+
+  .profile {
+    margin-top: 1rem !important;
+  }
+
+  .list-card {
+    width: 100%;
+    margin: 10px auto;
+    float: none !important;
+  }
+
+  .col-12 {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .footer .txtpmi {
+  }
+
+  .footer .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+}
+
+.row {
+  transform: scale(0.95); /* Ubah nilai 0.5 sesuai dengan tingkat perkecilan yang Anda inginkan */
+  /* Opsional: Anda juga bisa menambahkan transisi untuk efek perubahan ukuran yang lebih halus */
+  transition: transform 0.3s ease;
+}
+
+/* Untuk perangkat dengan lebar layar <= 768px */
+@media (max-width: 768px) {
+  .pmi {
+    flex: 1;
+    order: 1;
+  }
+
+  .pmi h1 {
+    font-size: 24px; /* Ubah sesuai kebutuhan Anda */
+    margin-right: 10%;
+  }
+
+  .maps {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 768px) {
+  .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    display: none; /* Menyembunyikan elemen dengan class "pmi" */
+  }
+
+  .foto-bawah {
+    margin-top: 3%;
+  }
+}
+
+/* Tambahkan CSS ini di dalam media query yang sesuai */
+@media (max-width: 768px) {
+  .met {
+    display: flex; /* Mengatur elemen-elemen di dalam row menjadi flex container */
+    flex-wrap: wrap; /* Memungkinkan elemen-elemen untuk memecah ke baris baru jika perlu */
+    justify-content: space-between; /* Mengatur jarak antara elemen-elemen agar terdistribusi secara merata */
+    margin-top: 30px;
+  }
+
+  .met > div {
+    flex: 1; /* Membagi ruang secara merata di antara elemen-elemen */
+    margin: autopx; /* Menambahkan jarak antara elemen-elemen */
+  }
+}
