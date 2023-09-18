@@ -170,12 +170,27 @@
                       >
                         <input
                           style="border-radius: 20px; font-size: 0.8rem"
-                          type="username"
-                          id="user-name"
+                          type="password"
+                          id="password"
                           class="form-control"
                           placeholder="Masukan Kata Sandi"
                         />
+                        <span id="show-password" class="password-icon" onclick="togglePasswordVisibility()">🔓</span>
                       </div>
+                      <script>
+                        function togglePasswordVisibility() {
+                        var passwordInput = document.getElementById("password");
+                        var passwordIcon = document.getElementById("show-password");
+
+                              if (passwordInput.type === "password") {
+                                  passwordInput.type = "text";
+                                  passwordIcon.textContent = "🔓"; // Mengubah ikon menjadi mata terbuka
+                              } else {
+                                  passwordInput.type = "password";
+                                  passwordIcon.textContent = "🔐"; // Mengubah ikon kembali menjadi mata tertutup
+                              }
+                          }
+                      </script>
                     </form>
 
                     <div class="container">
