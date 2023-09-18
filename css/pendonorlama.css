@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* navbar */
@@ -12,55 +12,6 @@ body .navbar {
 }
 .nav-item {
   margin: auto 20px;
-}
-
-@media (min-width: 500px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
-}
-@media (min-width: 500px) {
-  .gradient-custom-2 {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
-}
-
-/* Teks responsif */
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 16px; /* Ukuran teks default */
-}
-
-/* Media query untuk ukuran layar yang lebih kecil */
-@media (max-width: 767px) {
-  body {
-    font-size: 14px; /* Ukuran teks untuk layar kecil */
-  }
-}
-
-/* Gaya teks judul responsif */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-/* Media query untuk ukuran layar yang lebih kecil pada judul */
-@media (max-width: 767px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 1.5rem; /* Ukuran judul untuk layar kecil */
-  }
 }
 
 .logopmi {
@@ -74,29 +25,22 @@ h6 {
   border-radius: 20px;
 }
 
-/* Media query untuk layar dengan lebar maksimal 767px */
-@media (max-width: 950px) {
-  img {
-    display: none; /* Menghilangkan gambar */
-  }
-  img.logo {
-    display: block; /* Menampilkan gambar */
-  }
-}
-
 .coba {
   margin: 5% 0;
-  max-width: 100%; /* Memastikan konten tidak melebihi lebar kolom */
+  max-width: 100%;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 
-@media (max-width: 767px) {
   .coba {
     position: absolute; /* Mengatur posisi absolut */
     left: 0; /* Mengatur posisi horizontal ke kiri */
     right: 0; /* Mengatur posisi horizontal ke kanan */
     top: 50%; /* Mengatur posisi vertikal di tengah atas */
     transform: translateY(-50%); /* Mengatur posisi vertikal */
-    margin: 0; /* Menghapus margin */
+    margin: 0;
   }
 
   .tos {
@@ -110,5 +54,19 @@ h6 {
 
   .btn-masuk {
     margin-left: -6%;
+  }
+
+  .fut {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  img {
+    display: none;
+  }
+  img.logo {
+    display: block;
   }
 }
