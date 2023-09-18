@@ -41,11 +41,11 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
   .kartu {
-    width: 400px;
-    margin-left:-30% ;
-   
+    width: 800px;
+    margin-left: -1%;
+    margin-top: 1%;
      }
   .card-body {
     font-size: 12px;
@@ -79,7 +79,7 @@
     margin-top: 1%;
   }
   .ID{
-    width: 280px;
+    width: 420px;
    margin-top: -8%;
   }
   .nama{
