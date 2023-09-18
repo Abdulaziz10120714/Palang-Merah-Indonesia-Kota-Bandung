@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PMI KOTA BANDUNG</title>
-      <link rel="stylesheet" href="../../css/jquery.camshoot.css">
+     
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../style/font.css" />
     <link rel="stylesheet" href="../../css/registrasi.css">
-   
+    <link rel="stylesheet" href="../../css/jquery.camshoot.css">
     
   </head>
     
@@ -56,31 +56,31 @@
       <div class="modal-body">
 
         <!-- Camera -->
-     <div id="cameraContainer" style="width: 300px; height: 400px; position: relative;"><video id="cameraContainer_camera_1695021867021" width="300" height="400" autoplay="" class=""></video><div id="cameraContainer_toolbox_1695021867021" class="camera_toolbox"><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAb1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v0wLRAAAAJHRSTlMAAgMECBIiIy46REZJSlFSXGZweH6AjpCVoqOkr8TGyOrt9vl6qhpcAAAAAWJLR0QktAb5mQAAAIVJREFUGNPNkckOglAMRa/IWOAxgwzK1P//Rl8gFn0hrD2LLk5u07QFrokzTWzagjeKX2tPL1fznGxRHhGVXOtKNZe6epvu2KDb04pbElpWexoOV8eUih0cOvQRBPBDQ889xhH9/Lc6j5CmiHJDn2x5XwdXGBbrk3h836+RRivJBHW7+OwbKaoUy5I6ZyYAAAAASUVORK5CYII=" id="delete" title="Hapus foto" style="visibility: hidden;"></a><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAABmJLR0QA/wD/AP+gvaeTAAABlUlEQVRIia2UvWpUURSFvx2ihUIg4k+ETAYkTdTeSWclpPMN8hA+QmxEUthpkUZQsBMEIZ0/hT6AWGmTQqOYQARj4SSfRfaE4TL33jPJrGZf9jp7r73OOfdAA9SO+lbtOxr95DtNfRqhbtY0r2LzpAJd9aBQ5FC9VtcrsuE0cA+4C1xO7jxwZYy5fgB/8vsn8BJYj4j+YOonhROPi8cAoV4Afg1cTRgCF6eBxQKBw7T/Oge6BKxwtL1TDXUBLKL2Wix/U3sjx9Tl5JvQa5oCYB9YiYiP6ry6rr7KOB8RH9LR38YuLU4e5JoldbfC7apLyT88jZMXGR8BsxVuNvPD60aiTeRrxuUafpD/chqRcxl3avidyroTidzK+LSGH+RH3r5jtBz8OzXUs+pGhdvIfKjvmw6+5D9ZGxqoq95Ru0O5+y31RSKqz9SFyg4sqM8Lanuh3gA+tZwNHL1Dn4HvwFXgOmXv3c1QzwBbwFxBwbjYBjpTEfEPWAX2JiywB6xGRP/YrjoH3AZmJiDwG3gTEdsT6FWG/yCey281/SO7AAAAAElFTkSuQmCC" id="snap" title="Tekan untuk mengambil foto"></a><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAaVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8G612AAAAInRSTlMAAxITFRwiJTU2PkJDRkdISUxNV1haW2FiZm6O29zs9/n7qZIkbgAAAAFiS0dEIl1lXKwAAACSSURBVBjTndHbDoIwDAbgojJEPBQcTkEO9v0f0q1urijExP9q+ZI27QqwkETfYs6rwBeS6Q+eGyqMg1aplq7dcAqcoeOGn+l9rGYY0m44zrD1fi2Ye1uGPekX52GOx8ZC5gq5svRj72DCk/zkKq5fRs7l+ts3IxnlYwgFY2iM/7L9WNHbFMw1faX+PBpHJ0sHfgK9Yxz5L3fNtQAAAABJRU5ErkJggg==" id="save" title="Simpan foto" style="visibility: hidden;"></a></div><div class="snap_thumb"><canvas id="cameraContainer_canvas_1695021867021" height="400" width="300"></canvas><img style="width: 20%;"></div></div>
-    <button id="stop">Stop Camera</button>
-    <button id="reset">Reset Camera</button>
-    
-    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.camshoot.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            var anu = $("#cameraContainer").camshoot({
-                height:400,
-                width:300
+        <div id="cameraContainer"></div>
+        <button id="stop">Stop Camera</button>
+        <button id="reset">Reset Camera</button>
+        
+        <script type="text/javascript" src="../../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.camshoot.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var anu = $("#cameraContainer").camshoot({
+                    height:400,
+                    width:300
+                });
+        
+        
+                $("#stop").click(function () {
+                    anu.stop();
+                });
+                $("#reset").click(function () {
+                    anu.reset();
+                });
+        
+                anu.version();
+        
             });
-    
-    
-            $("#stop").click(function () {
-                anu.stop();
-            });
-            $("#reset").click(function () {
-                anu.reset();
-            });
-    
-            anu.version();
-    
-        });
-    </script>
+        </script>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
