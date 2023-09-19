@@ -39,9 +39,38 @@
 .btn-foto{
   margin-left: 45%;
 }
+#stop{
+  background: #177E89;
+  border-radius: 50px;
+  color: white;
+  border-color: white;
+  font-family: "Poppins";
+  width: 40%;
+  
+}
+#reset{
+  background: #177E89;
+  border-radius: 50px;
+  color: white;
+  border-color: white;
+  font-family: "Poppins";
+  width: 40%;
+
+  margin-left: 19%;
+}
+#cameraContainer{
+  margin-left: 18%;
+  margin-bottom: 4%;
+}
+.snap_thumb{
+  width: 150%;
+}
+#cameraContainer_toolbox_1695108509489{
+  margin-left: -40%;
+}
 
 
-@media (max-width:1200px) {
+@media (max-width:768px) {
   .kartu {
     width: 800px;
     margin-left: -1%;
