@@ -3,29 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="jquery.camshoot.css">
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.camshoot.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $("#cameraContainer").camera({
-                height:600,
-                width:400,
-                sound:true,
-                imagetype: 'jpg',
-                filename: 'testing',
-                flasheffect: true
-            });
-        });
-    </script>
-    
+    <title>Popup Bootstrap dengan Fitur Foto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div id="cameraContainer">
-        <button >Ambil Foto</button>
+
+<!-- Tombol untuk Membuka Popup -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Buka Popup
+</button>
+
+<!-- Modal (Popup) -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Bagian Header Modal -->
+            <div class="modal-header">
+                <h4 class="modal-title">Popup dengan Fitur Foto</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Bagian Body Modal -->
+            <div class="modal-body">
+                <!-- Video untuk Menampilkan Tampilan Kamera -->
+                <video id="video" width="100%" height="auto" autoplay></video>
+                <!-- Tombol untuk Mengambil Foto -->
+                <button type="button" class="btn btn-primary" id="takePhoto">Take Foto</button>
+                <!-- Kontainer untuk Menampilkan Hasil Foto -->
+                <canvas id="canvas" style="display: none;"></canvas>
+            </div>
+
+            <!-- Bagian Footer Modal -->
+            <div class="modal-footer">
+                <!-- Tombol Hapus -->
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
+                <!-- Tombol Simpan -->
+                <button type="button" class="btn btn-success" id="savePhoto">Simpan</button>
+            </div>
+
+        </div>
     </div>
+</div>
+
+<!-- Mengimpor skrip JavaScript Bootstrap dan getUserMedia -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Skrip JavaScript untuk Mengambil Foto -->
+<script>
+    // Ambil elemen video dan canvas
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+
+    // Tombol "Take Foto" - Saat diklik, ambil foto
+    document.getElementById('takePhoto').addEventListener('click', function () {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        canvas.style.display = 'block';
+    });
+
+    // Tombol "Simpan" - Simpan foto yang diambil
+    document.getElementById('savePhoto').addEventListener('click', function () {
+        const imgData = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        a.href = imgData;
+        a.download = 'photo.png';
+        a.click();
+    });
+
+    // Mengambil akses ke kamera pengguna
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            video.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error('Error accessing the camera: ', error);
+        });
+</script>
+
 </body>
-
-
-
 </html>

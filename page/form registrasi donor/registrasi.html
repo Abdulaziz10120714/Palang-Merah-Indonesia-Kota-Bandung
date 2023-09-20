@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PMI KOTA BANDUNG</title>
+     
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../style/font.css" />
     <link rel="stylesheet" href="../../css/registrasi.css">
-   
+    <link rel="stylesheet" href="../../css/jquery.camshoot.css">
     
   </head>
     
@@ -37,17 +38,52 @@
       
     </nav>
 
-    <section class="container ">
-    
-      
-        
-          <div class="kartu card mb-4 shadow-lg bg-white">
+    <section >
+          <div class="kartu container card mb-4 shadow-lg bg-white">
             <div class="card-body">
            
         <img src="../../img/Registrasi/profil.png">
        
-        <button class="btn-foto btn btn2" type="button" >Ambil Foto</button>
+        <button class="btn-foto btn btn2"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Ambil Foto </button>
+        <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pastikan Foto Wajah Anda Dengan Jelas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
 
+        <!-- Camera -->
+        <div id="cameraContainer"></div>
+        <button id="stop">Stop Camera</button>
+        <button id="reset">Reset Camera</button>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.camshoot.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var anu = $("#cameraContainer").camshoot({
+                    height:400,
+                    width:300
+                });
+        
+        
+                $("#stop").click(function () {
+                    anu.stop();
+                });
+                $("#reset").click(function () {
+                    anu.reset();
+                });
+        
+                anu.version();
+        
+            });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
 
         
       <div class="row row-cols-sm-5 mt-5 d-flex justify-content-center">
@@ -331,10 +367,10 @@
     </div>
   </div>
     <div class="col mt-5 float-end">
-    <button class="btn" type="button" >Simpan</button>
+    <button class="btn" type="button"><a href="../auth/pendaftarandonor.html" style="color: white;">SIMPAN</a></button>
     </div>
   </div>
-
+         
 </div>
          
       
@@ -373,9 +409,6 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
   
   
   
@@ -384,7 +417,7 @@
   
   
   
-    
+  <script src="../../js/bootstrap.bundle.min.js"></script>
             </body>
       </html>
         

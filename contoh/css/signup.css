@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+body .navbar {
+  font-weight: 600;
+}
+.nav-item {
+  margin: auto 20px;
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+/* Teks responsif */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px; /* Ukuran teks default */
+}
+
+/* Media query untuk ukuran layar yang lebih kecil */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px; /* Ukuran teks untuk layar kecil */
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.logopmi {
+  width: 100px;
+  height: 40px;
+}
+
+.responsive {
+  width: 375px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* Media query untuk layar dengan lebar maksimal 767px */
+@media (max-width: 950px) {
+  img {
+    display: none; /* Menghilangkan gambar */
+  }
+  img.logo {
+    display: block; /* Menampilkan gambar */
+  }
+}
+
+.coba {
+  margin: 1% 0;
+  max-width: 100%; /* Memastikan konten tidak melebihi lebar kolom */
+}
+
+@media (max-width: 768px) {
+  .coba {
+    position: absolute; /* Mengatur posisi absolut */
+    left: 0; /* Mengatur posisi horizontal ke kiri */
+    right: 0; /* Mengatur posisi horizontal ke kanan */
+    top: 50%; /* Mengatur posisi vertikal di tengah atas */
+    transform: translateY(-50%); /* Mengatur posisi vertikal */
+    margin: 0; /* Menghapus margin */
+  }
+  .copy p {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+}

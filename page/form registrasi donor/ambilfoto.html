@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KOTA BANDUNG</title>
+  
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/font.css" />
+    <link rel="stylesheet" href="../../css/registrasi.css">
+    <link rel="stylesheet" href="../../css/jquery.camshoot.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white box shadow fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img
+              src="../../img/logo.png"
+              alt=""
+              width="100%"
+              height="40"
+            />
+          </a>
+  
+          <div class="dropdown">
+            <a class="btn3 " href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../../img/Registrasi/profil.png" alt="User Profile" width="50" height="50" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="../../index.html">Keluar</a></li>
+            </ul>
+        </div>
+        </div>
+        
+        
+      </nav>
+
+
+<div id="cameraContainer"></div>
+<button id="stop">Stop Camera</button>
+<button id="reset">Reset Camera</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.camshoot.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        var anu = $("#cameraContainer").camshoot({
+            height:700,
+            width:1000
+        });
+
+
+        $("#stop").click(function () {
+            anu.stop();
+        });
+        $("#reset").click(function () {
+            anu.reset();
+        });
+
+        anu.version();
+
+    });
+</script>
+</body>
+</html>

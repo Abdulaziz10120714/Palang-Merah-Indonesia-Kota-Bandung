@@ -112,4 +112,9 @@ h6 {
     font-size: 0.5em;
     font-weight: bold;
   }
+
+  .fut {
+    position: fixed;
+    bottom: 0;
+  }
 }
