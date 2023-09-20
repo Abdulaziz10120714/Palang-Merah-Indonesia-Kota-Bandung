@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* navbar */
@@ -28,7 +28,7 @@ body .navbar {
 
 /* Teks responsif */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 16px; /* Ukuran teks default */
 }
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
@@ -70,6 +70,18 @@ h6 {
 .copy p {
   font-size: 0.7em;
   font-weight: bold;
+}
+
+#show-password {
+  position: absolute;
+  right: 115vh; /* Sesuaikan dengan posisi yang Anda inginkan */
+  bottom: 27vh; /* Sesuaikan dengan posisi yang Anda inginkan */
+}
+
+#show-password-2 {
+  position: absolute;
+  right: 115vh; /* Sesuaikan dengan posisi yang Anda inginkan */
+  bottom: 18vh; /* Sesuaikan dengan posisi yang Anda inginkan */
 }
 
 /* Media query untuk layar dengan lebar maksimal 767px */
