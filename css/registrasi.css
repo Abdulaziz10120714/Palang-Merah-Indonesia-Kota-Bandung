@@ -168,16 +168,86 @@
  
 }
 
-@media (max-width:500px){
-  .modal-dialog{
-margin-left: -1%;
-width: 150%;
+@media (max-width:576px){
+
+  .kartu{
+    margin-left: -2%;
+  }
+  .modal-content{
+margin-left: -3%;
+width: 80%;
   }
 #cameraContainer{
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 #stop{
-  height: 80%;
+  width: 38%;
+  
 }
+#reset{
+  width: 38%;
+ 
+}
+}
+
+@media (max-width:820px) {
+  .form-select{
+    
+    font-size:10px;
+  }
+  .form-control{
+    font-size:10px;
+  }
+  .idpilih{
+    width: 28%;
+    margin-left: -1%;
+    margin-top: 1%;
+  }
+  .ID{
+    width: 72%;
+   margin-top: -8%;
+  }
+  .nama{
+    width: 100%;
+  }
+  .tempat{
+    width: 100%;
+  }
+  .tanggal{
+    width: 100%;
+  }
+  .pos{
+    width: 100%;
+  }
+  .alamat{
+    width: 100%;
+  }
+  .telp{
+    width: 100%;
+  }
+  .rt{
+    width: 100%;
+
+  }
+  .JK{
+    width: 50%;
+    
+  }
+  .GD{
+    width: 50%;
+    
+  }
+  .pekerjaan{
+    width: 100%;
+  }
+  .kota{
+    width: 100%;
+  }
+  .kecamatan{
+    width: 100%;
+  }
+  .kelurahan{
+    width: 100%;
+  }
 }
