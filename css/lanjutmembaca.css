@@ -146,6 +146,10 @@ body .navbar {
   .pmi {
     text-align: center;
   }
+
+  .judul {
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 991px) {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" href="../../style/font.css" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
@@ -113,108 +114,135 @@
   
   </div>
   <!-- jumbotron -->
-  <section>
-    <div class="con-foto container">
-      <div class="row">
-        <div class="dua-kiri col-md-2 d-flex flex-column align-items-center img-fluid"> 
-          <img src="../../img/about/imgkecil10.jpg" class="kiri mb-2">
-          <img src="../../img/about/imgkecil11.jpg" class="kiri mb-2">
-        </div>
-         
-        <div class="empat-kiri col-md-2  py-5 gy-2 d-flex flex-column align-items-center img-fluid" > 
-          <img src="../../img/about/imgkecil6.jpg"  class="kiri-empat mb-2 ms-auto">
-          <img src="../../img/about/imgkecil7.jpg"  class="kiri-empat mb-2 ms-auto">
-          <img src="../../img/about/imgkecil8.jpg"  class="kiri-empat mb-2 ms-auto">
-          <img src="../../img/about/imgkecil9.jpg"  class="kiri-empat mb-2 ms-auto">
-        </div>
-  
-        <div class="tengah col-md-4 text-center py-md-5 img-fluid">
-          <img src="../../img/about/imgbesar.jpg" width="100%">
-        </div>
-  
-        <div class="empat-kanan col-md-2 py-5 px-2 d-flex flex-column align-items-center img-fluid"> 
-          <img src="../../img/about/imgkecil1.jpg"  class="kanan-empat mb-2 me-auto">
-          <img src="../../img/about/imgkecil2.jpg"  class="kanan-empat mb-2 me-auto">
-          <img src="../../img/about/imgkecil3.jpg"  class="kanan-empat mb-2 me-auto">
-          <img src="../../img/about/imgkecil5.jpg"  class="kanan-empat mb-2 me-auto">
-        </div>
-        
-        <div class="dua-kanan col-md-2 d-flex flex-column align-items-start img-fluid">
-          <img src="../../img/about/imgkecil4.jpg" width="33.5%"  class="kanan-dua  mb-2">
-          <img src="../../img/about/imgkecil12.jpg" width="34%" class="kanan-dua  mb-2">
+  <div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="col-sm-12 col-md-8 px-2 list-card">
+        <div class="card">
+          <div id="slideshow">
+          <div class="top-left">
+          <img class="card-img-top img-fluid" src="../../img/about/t1.png" alt="Card image cap">
+          <div class="abuabu card-body">
+            <div class="row">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t1.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t1.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t2.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t2.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t3.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t3.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t4.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t4.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t5.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t5.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                      <div class="foto-bawah col-md-4 p-2">
+                        <a href="../../img/about/t6.png" class="popup-image">
+                          <img class="card-img-top img-fluid small-img" src="../../img/about/t6.png" alt="Batas gambar kartu">
+                        </a>
+                      </div>
+                      <!-- Tambahkan tiga gambar berikutnya di sini -->
+                    </div>
+                  </div>
+                  <!-- Tambahkan slide-slide berikutnya di sini sesuai kebutuhan Anda -->
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            </div>
+          </div>
+
+          <!-- GAMBAR BAWAH -->
+          <script>
+            $(document).ready(function () {
+              // Inisialisasi carousel
+              $('#myCarousel').carousel();
+          
+              // Waktu perpindahan slide (dalam milidetik)
+              var slideInterval = 3000; // Ganti nilai sesuai dengan kebutuhan Anda (misalnya, 3000 ms atau 3 detik)
+          
+              // Fungsi untuk menjalankan perpindahan slide otomatis
+              function startCarousel() {
+                interval = setInterval(function () {
+                  $('#myCarousel').carousel('next');
+                }, slideInterval);
+              }
+          
+              // Fungsi untuk menghentikan perpindahan slide otomatis
+              function stopCarousel() {
+                clearInterval(interval);
+              }
+          
+              // Memulai perpindahan slide otomatis ketika halaman dimuat
+              startCarousel();
+          
+              // Menghentikan perpindahan slide otomatis ketika mouse berada di atas carousel
+              $('#myCarousel').on('mouseenter', function () {
+                stopCarousel();
+              });
+          
+              // Melanjutkan perpindahan slide otomatis ketika mouse meninggalkan carousel
+              $('#myCarousel').on('mouseleave', function () {
+                startCarousel();
+              });
+            });
+          </script>
+          <!-- GAMBAR BAWAH END -->
+          
+          <!-- GAMBAR ATAS -->
+          <script>
+            var topImage = document.querySelector('#slideshow .card-img-top');
+            var bottomImages = document.querySelectorAll('#slideshow .small-img');
+            var currentIndex = 0;
+          
+            function changeImage() {
+              topImage.src = bottomImages[currentIndex].src;
+              currentIndex = (currentIndex + 1) % bottomImages.length;
+            } // gambar atas digantikan oleh gambar bawah saat slideshow berjalan.
+          
+            setInterval(changeImage, 1000); //mengatur kecepatan slide
+          </script>
+          <!-- GAMBAR ATAS END -->
+          
+          <div class="card-body ">
+            <p class="card-text">Berdirinya Palang Merah Indonesia sebenarnya sudah dimulai sejak masa sebelum Perang Dunia Ke-II. Saat itu, tepatnya pada tanggal 21 Oktober 1873 Pemerintah Kolonial Belanda mendirikan Palang Merah di Indonesia dengan nama Nederlands Rode Kruis Afdeling Indie (Nerkai).</p>
+            <p class="card-text">Kemudian dibubarkan pada saat pendudukan Jepang. Perjuangan untuk mendirikan Palang Merah Indonesia sendiri diawali sekitar tahun 1932. Kegiatan tersebut dipelopori oleh Dr. RCL Senduk dan Dr. Banhder Djohan, Rencana tersebut mendapat dukungan luas terutama dari kalangan terpelajar Indonesia.</p>
+            <p class="card-text">Mereka berusaha keras membawa rancangan tersebut ke dalam sidang Konferensi Nerkai pada tahun 1940 walaupun akhirnya ditolak mentah-mentah. Terpaksa rancangan itu disimpan untuk menunggu kesempatan yang tepat.</p>
+            <p class="card-text">Seperti tak kenal menyerah, saat pendudukan Jepang, mereka kembali mencoba untuk membentuk Badan Palang Merah Nasional. Namun sekali lagi upaya itu mendapat halangan dari Pemerintah Tentara Jepang sehingga untuk kedua kalinya rancangan itu harus kembali disimpan.</p>
+            <p class="card-text">Tujuh belas hari setelah proklamasi kemerdekaan 17 Agustus 1945, pada tanggal 3 September 1945, Presiden Soekarno mengeluarkan perintah untuk membentuk suatu badan Palang Merah Nasional kepada Menteri Kesehatan dr. Buntaran Martoatmojo untuk membentuk suatu badan Palang Merah Indonesia pada 3 September 1945, dan pada tanggal 5 september 1945 dr. Buntaran Martoatmojo membentuk panitia yang terdiri dari 5 orang yaitu dr. R. Mochtar, dr. Bahder Djohan, dr. Joehana, Dr. Marjuki dan dr. Sitanala dan Akhirnya tanggal 17 September 1945 terbentuklan PMI dengan Ketua Pengurus Besar yang Pertama adalah Drs. Mohammad Hatta.</p>
+            <p class="card-text">PMI merintis kegiatannya melalui bantuan korban perang revolusi kemerdekaan Republik Indonesia dan pengembalian tawanan perang sekutu maupun Jepang. Oleh karena kinerja tersebut, PMI mendapat pengakuan secara Internasional oleh Komite Palang Merah Internasional (ICRC) pada 15 Juni 1950 dengan menjadi anggota Palang Merah Internasional.</p>
+            <p class="card-text">Setelah itu PMI diterima menjadi anggota Perhimpunan Nasional ke-68 oleh Liga Perhimpunan Palang Merah. Serta Bulan Sabit Merah yang disebut Federasi Internasional Perhimpunan Palang Merah dan Bulan Sabit Merah (IFRC) pada Oktober 1950. PMI terus memberikan bantuan hingga akhirnya Pemerintah Republik Indonesia Serikat mengeluarkan Keppres No. 25 tanggal 16 Januari 1950. Dikuatkan dengan Keppres No. 246 tanggal 29 November 1963. Adanya konstitusi itu dapat menjadi jaminan bahwa pemerintah Indonesia mengakui keberadaan PMI.</p>
+            <p class="card-text">Adapun tugas utama PMI berdasarkan Keppres RIS No. 25 tahun 1950 dan Keppres RI No. 246 tahun 1963 adalah untuk memberikan bantuan pertama pada korban bencana alam dan korban perang sesuai dengan isi Konvensi Jenewa 1949.</p>  
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  
-   
-  <div class="teks-bawah container-sm" style="font-family: 'poppins'; text-align: justify;">
-    <h2 style="color: #084C61;"> SEJARAH SINGKAT PALANG MERAH INDONESIA</h2>
-  <p><strong>Berdirinya</strong> Palang Merah di Indonesia sebenarnya sudah dimulai sejak masa sebelum Perang Dunia Ke-II. Saat itu, tepatnya pada tanggal 21 Oktober 1873 Pemerintah Kolonial Belanda mendirikan Palang Merah di Indonesia dengan nama Nederlands Rode Kruis Afdeling Indie (Nerkai), yang kemudian dibubarkan pada saat pendudukan Jepang.</p>
-
-<p>Perjuangan untuk mendirikan Palang Merah Indonesia sendiri diawali sekitar tahun 1932. 
-  Kegiatan tersebut dipelopori oleh Dr. RCL Senduk dan Dr Bahder Djohan. Rencana tersebut 
-  mendapat dukungan luas terutama dari kalangan terpelajar Indonesia. Mereka berusaha keras
-  membawa rancangan tersebut ke dalam sidang Konferensi Nerkai pada tahun 1940 walaupun akhirnya 
-  ditolak mentah-mentah. Terpaksa rancangan itu disimpan untuk menunggu kesempatan yang tepat. 
-  Seperti tak kenal menyerah, saat pendudukan Jepang, mereka kembali mencoba untuk membentuk Badan 
-  Palang Merah Nasional, namun sekali lagi upaya itu mendapat halangan dari Pemerintah Tentara Jepang 
-  sehingga untuk kedua kalinya rancangan itu harus kembali disimpan.</p>
-
-<p>Tujuh belas hari setelah proklamasi kemerdekaan 17 Agustus 1945, yaitu pada tanggal 3 September 1945, 
-  Presiden Soekarno mengeluarkan perintah untuk membentuk suatu badan Palang Merah Nasional. Atas perintah 
-  Presiden, maka Dr. Buntaran yang saat itu menjabat sebagai Menteri Kesehatan Republik Indonesia Kabinet I,
-  pada tanggal 5 September 1945 membentuk Panitia 5 yang terdiri dari: dr R. Mochtar (Ketua), dr. Bahder Djohan
-  (Penulis), dan dr Djuhana; dr Marzuki; dr. Sitanala (anggota).</p>
-
-<p>Akhirnya Perhimpunan Palang Merah Indonesia berhasil dibentuk pada 17 September 1945 yang di ketuai oleh Drs. 
-  Mohammad Hatta. Didalam satu negara hanya ada satu perhimpunan nasional, maka 16 Januari 1950 pemerintah belanda 
-  membubarkan NERKAI dan menyerahkan asetnya ke PMI. Pihak NERKAI diwakili oleh dr. B. Van Trich sedangkan dari PMI 
-  diwakili oleh dr. Bahder Djohan.</p>
-
-<p>PMI merintis kegiatannya melalui bantuan korban perang revolusi kemerdekaan Republik Indonesia dan pengembalian 
-  tawanan perang sekutu maupun Jepang. Oleh karena kinerja tersebut, PMI mendapat pengakuan secara Internasional 
-  oleh Komite Palang Merah Internasional (ICRC) pada 15 Juni 1950 dengan menjadi anggota Palang Merah Internasional. Setelah itu PMI diterima menjadi anggota Perhimpunan Nasional ke-68 oleh Liga Perhimpunan Palang Merah dan Bulan Sabit Merah yang disebut Federasi Internasional Perhimpunan Palang Merah dan Bulan Sabit Merah (IFRC) pada Oktober 1950.</p>
-
-<p>PMI terus memberikan bantuan hingga akhirnya Pemerintah Republik Indonesia Serikat mengeluarkan Keppres No. 25 tanggal 16
-   Januari 1950 dan dikuatkan dengan Keppres No. 246 tanggal 29 November 1963. Pemerintah Indonesia mengakui keberadaan PMI. 
-   Adapun tugas utama PMI berdasarkan Keppres RIS No. 25 tahun 1950 dan Keppres RI No. 246 tahun 1963 adalah untuk memberikan 
-   bantuan pertama pada korban bencana alam dan korban perang sesuai dengan isi Konvensi Jenewa 1949.</p>
-
-<p>Pada tahun 2018 PMI adalah organisasi kemanusiaan yang berstatus badan hukum, diundangkan dengan 
-  Undang-Undang nomor 1 tahun 2018 tentang Kepalangmerahan guna menjalankan kegiatan Kepalangmerahan  
-  sesuai dengan Konvensi Jenewa Tahun 1949, dengan tujuan untuk mencegah dan meringankan penderitaan dan melindungi 
-  korban tawanan perang dan bencana, tanpa membedakan agama, bangsa, suku bangsa, warna kulit, jenis kelamin, 
-  golongan, dan Pandangan Politik. Adapun tugas yang dilakukan PMI adalah :</p>
-<p>
-1. Memberikan bantuan kepada korban konflik bersenjata, kerusuhan dan lainnya;
-<p>
-2. Memberikan pelayanan darah sesuai dengan ketentuan peraturan perundang-undangan;
-</p>
-<p>
-3. Melakukan pembinaan relawan;
-</p>
-<p>
-4. Melaksanakan pendidikan dan pelatihan yang berkaitan dengan Kepalangmerahan;
-</p>
-<p>
-5. Menyebarluaskan informasi yang berkaitan dengan kegiatan Kepalangmerahan;
-</p>
-<p>
-6. Membantu dalam penanganan musibah dan/atau bencana di dalam dan di luar negeri;
-</p>
-<p>
-7. Membantu pemberian pelayanan kesehatan dan sosial; dan
-</p>
-<p>
-8. Melaksanakan tugas kemanusiaan lainnya yang diberikan oleh pemerintah.
-</p>
-<p>
-Berdasarkan data per-Februari 2019, PMI telah berdiri di 33 Provinsi, 474 kabupaten/Kota, 
-3.406 Kecamatan dan mempunyai hampir 1,5 juta sukarelawan yang siap melakukan pelayanan.
-</p>
   </div>
+</div>
 
   <footer class="footer container-fluid mt-3"> 
     <div class="row">
@@ -262,3 +290,4 @@ Berdasarkan data per-Februari 2019, PMI telah berdiri di 33 Provinsi, 474 kabupa
     <script src="../../js/bootstrap.bundle.min.js"></script>
       </body>
     </html>
+	

@@ -112,3 +112,9 @@ body .navbar {
 }
 
 /* ------------ */
+
+#show-password {
+  position: absolute;
+  right: 110vh; /* Sesuaikan dengan posisi yang Anda inginkan */
+  bottom: 34.5vh; /* Sesuaikan dengan posisi yang Anda inginkan */
+}
