@@ -73,7 +73,7 @@
 @media (max-width:768px) {
   .kartu {
     width: 800px;
-    margin-left: -1%;
+    margin-left: 3%;
     margin-top: 1%;
      }
   .card-body {
@@ -91,7 +91,7 @@
     width: 20%;
   }
   .btn{
-    font-size:70%;
+    font-size:80%;
     
   }
   
@@ -108,13 +108,16 @@
     margin-top: 1%;
   }
   .ID{
-    width: 420px;
+    width: 72%;
    margin-top: -8%;
   }
   .nama{
     width: 100%;
   }
   .tempat{
+    width: 100%;
+  }
+  .tanggal{
     width: 100%;
   }
   .pos{
@@ -150,5 +153,31 @@
   .kelurahan{
     width: 100%;
   }
+  .modal-content{
+    
+    margin-left: 5%;
+  }
+  .modal-dialog{
+    margin-left: 20%;
+    width: 200%;
+    height: 250%;
+  }
+  #reset{
+    height: 60%;
+  }
  
+}
+
+@media (max-width:500px){
+  .modal-dialog{
+margin-left: -1%;
+width: 150%;
+  }
+#cameraContainer{
+  margin-left: 30%;
+}
+
+#stop{
+  height: 80%;
+}
 }
