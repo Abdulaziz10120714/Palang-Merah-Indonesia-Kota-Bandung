@@ -42,6 +42,7 @@ body .navbar {
   background-color: #084c61;
   padding: 40px 0;
   color: #fff;
+  margin-top: 20%;
 }
 
 .footer iframe {
@@ -78,6 +79,7 @@ body .navbar {
   font-size: 0.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+ 
 }
 /* footer end */
 

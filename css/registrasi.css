@@ -21,11 +21,61 @@
    
 } 
 .form-control {
+  
     border-color: #177E89;
 }
+ 
 .form-select{
     border-color: #177E89;
 }
+
+.ID{
+  width: 70%;
+  }
+.nama {
+  width: 87%;
+}
+
+.tempat{
+  width: 87%;
+}
+.tanggal{
+  width: 87%;
+}
+.pos{
+  width: 87%;
+}
+.alamat{
+  width: 87%;
+}
+.telp{
+  width: 87%;
+}
+.rt{
+  width: 87%;
+
+}
+.JK{
+  width: 44%;
+  
+}
+.GD{
+  width: 44%;
+  
+}
+.pekerjaan{
+  width: 87%;
+}
+.kota{
+  width: 87%;
+}
+.kecamatan{
+  width: 87%;
+}
+.kelurahan{
+  width: 87%;
+}
+
 .card img {
   margin: 10px;
   margin-left: 45%;

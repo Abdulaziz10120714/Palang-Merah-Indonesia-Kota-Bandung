@@ -39,7 +39,14 @@ body .navbar {
 
 .list-card p {
   font-size: 60%;
+  
 }
+.card-text{
+  white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
 .list-card .btn {
   width: 117px;
   height: 24px;

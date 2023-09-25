@@ -24,7 +24,6 @@ body .navbar {
 .syarat .row {
   font-size: 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -99,6 +98,10 @@ body .navbar {
 .copy p {
   font-size: 0.7em;
   font-weight: bold;
+}
+.img-fluid{
+ width: 900px;
+  height: 700px;
 }
 
 .footer .alamat p,
