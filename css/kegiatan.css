@@ -42,6 +42,28 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+  font-size: 2.3vmin;
+}
+.btn-primary {
+  border: 1px solid #177e89 !important;
+  background-color: #177e89;
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+  box-shadow: 0 0 0 4px #084c61;
+}
+
+.btn-primary:active {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+}
+
 /* navbar */
 body .navbar {
   font-weight: 600;
