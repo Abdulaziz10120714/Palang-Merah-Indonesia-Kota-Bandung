@@ -22,59 +22,27 @@ body .navbar {
 }
 
 .carousel-item img {
-  width: 248vh !important ;
-  height: 93vh !important ;
-  margin-top: 7vh ;
+  width: 100% !important;
+  margin-top: 7vh !important;
 }
 
 .list-card {
   float: left !important;
-  width: 310px;
- 
 }
 
-.list-card h5 {
-  font-size: 140%;
+.aktifitas {
+  padding: 20px 40px;
+  margin-top: -200px;
+  z-index: 1000;
+  position: relative;
 }
-
-.list-card p {
-  font-size: 60%;
-  
-}
-.card-text{
-  white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-}
-
-.list-card .btn {
-  width: 117px;
-  height: 24px;
-  font-size: 60%;
-}
-.judul {
-  margin-top: 50px;
-  margin-left: 3%;
-}
-
 /* slide gambar end */
 
 /* isi */
 .profile {
-  margin-top: 120px;
+  margin-top: -200px;
   padding-top: 200px;
   z-index: 999;
-}
-
-.profile .img-fluid1 {
-  width: 50%;
-  margin-left: 20%;
-  margin-top: 20%;
-}
-.profile .img-fluid2 {
-  width: 50%;
-  margin-left: 50%;
-  margin-top: 50%;
 }
 
 .profile p {
@@ -82,7 +50,10 @@ body .navbar {
 }
 /* isi end */
 
-
+.aktifitas.container {
+  max-width: 1000px;
+  padding: 20px;
+}
 .aktifitas.container .btn {
   background-color: #177e89;
   border: rgb(23, 126, 137) solid 1px;
@@ -100,11 +71,7 @@ body .navbar {
 }
 
 .agenda-isi .row .col-12 {
-  margin-top: -60px;
-  
-}
-.agenda-isi .list-card {
-  width: 288px;
+  margin-top: -70px;
 }
 
 .btn-agenda {
@@ -241,7 +208,8 @@ body .navbar {
     justify-content: center;
   }
 
-  
+  .footer .txtpmi {
+  }
 
   .footer .alamat p {
     padding: none;
@@ -288,7 +256,9 @@ body .navbar {
     padding: 0 15px;
   }
 
-  
+  .footer .txtpmi {
+  }
+
   .footer .alamat p,
   .telfon p,
   .instagram p,
