@@ -3,7 +3,28 @@
   margin: 0;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.btn {
+  font-size: 2.3vmin;
+}
+.btn-primary {
+  border: 1px solid #177e89 !important;
+  background-color: #177e89;
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+  box-shadow: 0 0 0 4px #084c61;
+}
+
+.btn-primary:active {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
 }
 
 /* navbar */
@@ -116,7 +137,6 @@ body .navbar {
 /* data end */
 
 /* /* footer * */
-
 .footer {
   background-color: #084c61;
   padding: 40px 0;
@@ -130,23 +150,13 @@ body .navbar {
 
 .footer h1 {
   font-weight: 400;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .footer i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.copy {
-  background-color: #177e89;
-  padding: 10px 0;
-}
-
-.copy p {
-  font-size: 0.7em;
-  font-weight: bold;
 }
 
 .footer .alamat p,
@@ -158,19 +168,17 @@ body .navbar {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.row {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
 /* footer end */
 
 /* media quere */
 @media (max-width: 768px) {
   .data input {
     text-align: start !important;
-  }
-
-  .footer iframe {
-    height: 300px;
-  }
-
-  .footer .txtpmi {
   }
 
   .footer .alamat p {
@@ -190,6 +198,38 @@ body .navbar {
 
   .pmi {
     text-align: center;
+  }
+
+  .pmi {
+    flex: 1;
+    order: 1;
+  }
+
+  .pmi h1 {
+    font-size: 24px;
+    margin-right: 10%;
+  }
+
+  .maps {
+    margin-left: 9%;
+  }
+
+  .met {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .met > div {
+    flex: 1;
+    margin: auto;
+  }
+  .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    display: none;
   }
 
   .info .gambar {

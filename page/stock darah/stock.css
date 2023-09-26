@@ -87,16 +87,6 @@ th {
   transform: translateY(-50%);
 }
 
-.copy {
-  background-color: #177e89;
-  padding: 10px 0;
-}
-
-.copy p {
-  font-size: 0.7em;
-  font-weight: bold;
-}
-
 .footer .alamat p,
 .telfon p,
 .instagram p,
@@ -105,6 +95,11 @@ th {
   font-size: 0.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.row {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
 }
 /* footer end */
 
@@ -131,8 +126,16 @@ th {
   .footer iframe {
     height: 200px;
   }
+  .list-card {
+    margin: 10px auto;
+  }
+  .col-12 {
+    padding: 0 10px;
+  }
 
-  .footer .txtpmi {
+  .link-image .col {
+    display: flex;
+    justify-content: center;
   }
 
   .footer .alamat p {
@@ -152,6 +155,38 @@ th {
 
   .pmi {
     text-align: center;
+  }
+
+  .pmi {
+    flex: 1;
+    order: 1;
+  }
+
+  .pmi h1 {
+    font-size: 24px;
+    margin-right: 10%;
+  }
+
+  .maps {
+    margin-left: 9%;
+  }
+
+  .met {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .met > div {
+    flex: 1;
+    margin: auto;
+  }
+  .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    display: none;
   }
 }
 
