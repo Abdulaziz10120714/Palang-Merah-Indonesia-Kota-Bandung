@@ -26,13 +26,7 @@ body .navbar {
 }
 .gradient-banner {
   height: 250px;
-  background: linear-gradient(
-    to right,
-    #084c61,
-    #084c61,
-    #084c61,
-    rgba(255, 255, 255, 0.22)
-  );
+  background: linear-gradient(to right, #084c61, #084c61, #084c61, rgba(255, 255, 255, 0.22));
   position: absolute;
   top: 0;
 }
@@ -52,34 +46,56 @@ body .navbar {
   height: 35vmin;
   border-radius: 100%;
   background: linear-gradient(to bottom, #084c6158, #ffc75733);
-}
-
-@media (max-width: 767px) {
-  .banner-title {
-    height: 150px;
-    background: linear-gradient(
-      to right,
-      #084c61,
-      #084c61,
-      #084c61,
-      rgba(255, 255, 255, 0.22)
-    );
-  }
-
-  .image-banner img {
-    display: none;
-  }
-
-  .garis {
-    height: 25px;
-    widht: 90%;
-  }
+  margin-left: 20%;
 }
 
 @media (max-width: 768px) {
+
+  .img-atas,
+  .grad-tengah,
+  .bawah-navbar,
+  .garis {
+    display: none; /* Menghilangkan gambar */
+  }
+
+  .gradient-banner {
+    height: 250px;
+    background: linear-gradient(to right, #084c61, #084c61, #084c61, rgba(255, 255, 255, 0.22));
+    position: absolute;
+    top: 0;
+  }
+
+  .image-banner {
+    position: relative;
+    top: 0;
+  }
+
+  .lingkaran1 {
+    width: 50vmin; /* Mengubah ukuran lingkaran untuk tampilan mobile */
+    height: 50vmin;
+    margin-top: 10%;
+  }
+
+  .bawah-navbar {
+    margin-bottom: -50%;
+  }
+
+  .form-group{
+    margin-top:  50%;
+    width: 370%; 
+  }
+  .cari{
+    margin-left: 50%;
+    margin-top: -4%;
+   
+  }
+ 
+  
 }
 
-@media (min-width: 992px) {
+
+
+@media (min-width: 576px) {
 }
 
 /* vietnamese */

@@ -78,7 +78,7 @@ body .navbar {
 }
 
 .card-body {
-  widht: 12%;
+  width: 12%;
   height: 30px;
   margin-bottom: 30%;
   padding: 1%;
@@ -252,8 +252,7 @@ body .navbar {
     justify-content: center;
   }
 
-  .footer .txtpmi {
-  }
+
 
   .footer .alamat p {
     padding: none;
