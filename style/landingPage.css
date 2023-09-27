@@ -6,6 +6,34 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+  font-size: 2.3vmin;
+}
+.btn-primary {
+  border: 1px solid #177e89 !important;
+  background-color: #177e89;
+  color: white;
+}
+
+.btn-primary:hover {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+  box-shadow: 0 0 0 4px #084c61;
+}
+
+.btn-primary:active {
+  border: 1px solid #084c61 !important;
+  background-color: #084c61 !important;
+  color: white;
+}
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* navbar */
 body .navbar {
   font-weight: 600;
@@ -24,6 +52,7 @@ body .navbar {
 .carousel-item img {
   width: 100% !important;
   margin-top: 7vh !important;
+  height: 300px !important;
 }
 
 .list-card {
@@ -32,7 +61,7 @@ body .navbar {
 
 .aktifitas {
   padding: 20px 40px;
-  margin-top: -200px;
+  margin-top: -100px;
   z-index: 1000;
   position: relative;
 }
@@ -51,9 +80,10 @@ body .navbar {
 /* isi end */
 
 .aktifitas.container {
-  max-width: 1000px;
-  padding: 20px;
+  max-width: 900px;
+  padding: 5px;
 }
+
 .aktifitas.container .btn {
   background-color: #177e89;
   border: rgb(23, 126, 137) solid 1px;
@@ -160,16 +190,6 @@ body .navbar {
   transform: translateY(-50%);
 }
 
-.copy {
-  background-color: #177e89;
-  padding: 10px 0;
-}
-
-.copy p {
-  font-size: 0.7em;
-  font-weight: bold;
-}
-
 .footer .alamat p,
 .telfon p,
 .instagram p,
@@ -178,6 +198,11 @@ body .navbar {
   font-size: 0.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.row {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
 }
 /* footer end */
 
@@ -208,9 +233,6 @@ body .navbar {
     justify-content: center;
   }
 
-  .footer .txtpmi {
-  }
-
   .footer .alamat p {
     padding: none;
   }
@@ -228,6 +250,38 @@ body .navbar {
 
   .pmi {
     text-align: center;
+  }
+
+  .pmi {
+    flex: 1;
+    order: 1;
+  }
+
+  .pmi h1 {
+    font-size: 24px;
+    margin-right: 10%;
+  }
+
+  .maps {
+    margin-left: 9%;
+  }
+
+  .met {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .met > div {
+    flex: 1;
+    margin: auto;
+  }
+  .alamat p,
+  .telfon p,
+  .instagram p,
+  .facebook p {
+    display: none;
   }
 }
 
