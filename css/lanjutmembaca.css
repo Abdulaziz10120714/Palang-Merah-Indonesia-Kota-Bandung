@@ -244,3 +244,12 @@ body .navbar {
     margin: autopx; /* Menambahkan jarak antara elemen-elemen */
   }
 }
+
+.isi-berita {
+  background: white;
+  padding: 2%;
+}
+
+.utama {
+  border: 0.2px solid black;
+}
