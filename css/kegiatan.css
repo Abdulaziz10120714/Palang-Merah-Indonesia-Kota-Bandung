@@ -353,7 +353,7 @@ body .navbar {
 
   .cari {
     margin-bottom: -20px;
-    widht: 10%;
+    widht: 60%;
   }
 }
 @media (max-width: 768px) {
@@ -376,9 +376,9 @@ body .navbar {
 
   .card-putih {
     width: 100%;
-    height: 55%;
+    height: 45%;
     margin-left: 2%;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
   .put-grup {
@@ -416,12 +416,26 @@ body .navbar {
   .pag-number {
     margin-top: 25%;
   }
+
+  .top-left {
+    margin-left: -10%;
+    width: 150px; /* Lebar rectangle */
+    height: 40px; /* Tinggi rectangle */
+    background-color: #db3a34; /* Warna background rectangle */
+    border-radius: 20px 0px 35px 0px;
+    font-weight: bold;
+    text-align: center; /* Mengatur teks di tengah secara horizontal */
+    display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
+    align-items: center; /* Mengatur teks di tengah secara vertikal */
+    justify-content: center; /* Mengatur teks di tengah secara horizontal */
+  }
 }
 
 .jud-mem {
   padding-top: 0.5vmin;
-  font-size: 3vmin;
+  font-size: 90%;
   font-family: "poppins";
+  padding-left: 5%;
 }
 
 .top-left {
@@ -437,4 +451,15 @@ body .navbar {
   display: flex; /* Menggunakan flexbox untuk mengatur teks di tengah secara vertikal */
   align-items: center; /* Mengatur teks di tengah secara vertikal */
   justify-content: center; /* Mengatur teks di tengah secara horizontal */
+}
+
+@media (max-width: 768px) {
+  .jud-mem {
+    font-size: 80%; /* Adjust the font size for smaller screens */
+    padding-left: 2%; /* Adjust the left padding for smaller screens */
+  }
+
+  .btn-lanmem {
+    margin-top: -10%;
+  }
 }
