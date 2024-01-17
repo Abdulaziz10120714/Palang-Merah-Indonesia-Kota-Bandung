@@ -48,14 +48,20 @@ body .navbar {
   background: linear-gradient(to bottom, #084c6158, #ffc75733);
   margin-left: 20%;
 }
+.btn {
+  width: 100%;
+}
+
+
+
+
 
 @media (max-width: 768px) {
-
   .img-atas,
   .grad-tengah,
   .bawah-navbar,
   .garis {
-    display: none; /* Menghilangkan gambar */
+    display: none;
   }
 
   .gradient-banner {
@@ -71,31 +77,40 @@ body .navbar {
   }
 
   .lingkaran1 {
-    width: 50vmin; /* Mengubah ukuran lingkaran untuk tampilan mobile */
+    width: 50vmin;
     height: 50vmin;
     margin-top: 10%;
   }
 
-  .bawah-navbar {
-    margin-bottom: -50%;
-  }
-
   .form-group{
-    margin-top:  50%;
-    width: 370%; 
-  }
-  .cari{
-    margin-left: 50%;
-    margin-top: -4%;
+    margin-top: -90%;
    
+  }  
+  .input-group {
+  width: 190%;
   }
- 
-  
+  .cari {
+    margin-left: 110%;
+    margin-top: -13%;
+  }
+.btn{
+  width: 50px;
 }
+}
+
+
+  
+
 
 
 
 @media (min-width: 576px) {
+  
+.input-group {
+  width: 220px ;
+}
+
+  
 }
 
 /* vietnamese */
