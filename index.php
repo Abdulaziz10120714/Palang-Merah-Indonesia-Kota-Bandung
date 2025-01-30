@@ -13,7 +13,7 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg bg-white box shadow fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">
+              <a class="navbar-brand" href="../index.php">
                 <img src="./img/logo.png" alt="logo" width="100%" height="40" />
               </a>
               <button
@@ -46,13 +46,13 @@
                       Unit Donor Darah
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./page/syarat donor/syarat.html">Daftar Online</a></li>
-                      <li><a class="dropdown-item" href="./page/donor/cekWaktu.html">CeK Waktu Donor</a></li>
+                      <li><a class="dropdown-item" href="./page/syarat donor/syarat.php">Daftar Online</a></li>
+                      <li><a class="dropdown-item" href="./page/donor/cekWaktu.php">CeK Waktu Donor</a></li>
                       <li>
-                        <a class="dropdown-item" href="./page/MobileUnit/mobileunit.html">Jadwal Mobile Unit</a>
+                        <a class="dropdown-item" href="./page/MobileUnit/mobileunit.php">Jadwal Mobile Unit</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./page/stock darah/stock.html">Stok Darah</a>
+                        <a class="dropdown-item" href="./page/stock darah/stock.php">Stok Darah</a>
                       </li>
                     </ul>
                   </li>
@@ -78,10 +78,10 @@
                     <a class="nav-link" href="./style/404.html">Artikel</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./page/kegiatan/seputarkegiatan.html">Kegiatan</a>
+                    <a class="nav-link" href="./page/kegiatan/seputarkegiatan.php">Kegiatan</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./page/about/about.html">About us</a>
+                    <a class="nav-link" href="./page/about/about.php">About us</a>
                   </li>
                 </ul>
               </div>
